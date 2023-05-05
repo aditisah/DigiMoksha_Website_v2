@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Schadow BT Roman';
+    src: url('../fonts/schadow-bt-3.woff2') format('woff2'),
+         url('../fonts/schadow-bt-3.woff') format('woff');
+    font-weight: roman;
+    font-style: normal;
+  }
+  
+
+  .font-schadow{
+    font-family: 'Schadow BT';
+  }

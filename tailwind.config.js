@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontWeight: {
+        '400': 400,
+      },
+    },
   },
   plugins: [],
 }
