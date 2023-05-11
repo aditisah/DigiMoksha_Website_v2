@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DigiMoksha_v2</title>
+</head>
+<body>
+    <header class="relative">
+        <div class="z-0 w-full">
+            <img src="./assets/apple.png" alt="desktop_image">
+        </div>
+            <div>
+                <img class="absolute top-[47px] left-[140px] h-12 w-[122px] z-10" src="./assets/logo_hd.png" alt="logo">
+                <nav class="flex justify-end">
+                    <div id="menu" class="absolute top-[65px] left-[1427px] cursor-pointer">
+                        <div class="h-[2px] w-9 bg-white"></div>
+                        <div class="h-[2px] w-9 bg-white mt-2"></div>
+                    </div>
+                    <div id="menu_items" class="hidden absolute top-[65px] left-[1390px]">
+                        <div class="h-[2px] w-9 ml-[37px] bg-white"></div>
+                        <ul class="text-white text-right font-light">
+                            <li class="mt-2">Home</li>
+                            <li>About us</li>
+                            <li>Service</li>
+                            <li>Academy</li>
+                            <li>Portfolio</li>
+                            <li class="mb-2">Contact</li>
+                        </ul>
+                        <div class="h-[2px] w-9 ml-[37px] bg-white"></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div>
+                <div>
+                    <h3 class="absolute w-[800px] top-[300px] left-[250px] font-schadow text-white text-6xl font-serif">Filling up the empty chairs in your office</h3>
+                </div>
+                <div>
+                    <h5 class="absolute top-[440px] left-[250px] text-2xl font-light text-white">Check out our Staffing Options</h5>
+                </div>
+            </div>
+        </header>
+    <!-- section1 -->
+        <section class="relative w-full bg-gray-100 h-[1000px] overflow-hidden">
+            <div class="mx-72">
+                <div class="mt-32">
+                    <h1 class="font-schadow text-7xl">Staffing solutions that are tailored around your needs</h1>
+                </div>
+                <div class="font-schadow mt-10 text-4xl">
+                    <h2>We provide talented professional in an engagement model of your choice</h2>
+                </div>
+                <div>
+                    <p class="mt-4 font-thin">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper dapibus libero quis sodales. Curabitur vel turpis in nisl aliquet molestie. Curabitur malesuada sapien et scelerisque commodo. Integer malesuada at augue eu egestas. Aenean quis elementum orci, at accumsan libero. Phasellus nec pretium dui. Donec volutpat posuere libero ac ultrices. Suspendisse ex enim, porttitor nec pellentesque scelerisque, commodo at ligula. Vivamus iaculis in sapien ac tempus. Praesent mattis nibh nec sapien varius, porta vestibulum mauris fringilla.
+                    </p>
+                </div>
+                <div id="images" class="relative flex flex-wrap h-64 pt-5">
+                    <div class="w-1/3">
+                        <div id="image">
+                            <img src="./assets/smile.png">
+                        </div>
+                        <div id="content" class="w-80">
+                            <h3 class="text-2xl">Full time Employees</h3>
+                            <p class="text-sm font-light">Candidates we provide are carefully matched to your requirements which means quick closure and fewer interviews.</p>
+                        </div>
+                    </div>
+                    <div class="w-1/3">
+                        <div id="image">
+                            <img src="./assets/man.png">
+                        </div>
+                        <div id="content" class="w-80">
+                            <h3 class="text-2xl">Contractual Employees</h3>
+                            <p class="text-sm font-light">We have professionals that can start immediately. We take care of the payroll and you just tell us your requirement.</p>
+                        </div>
+                    </div>
+                    <div class="w-1/3">
+                        <div id="image">
+                            <img src="./assets/lady.png">
+                        </div>
+                        <div id="content" class="w-80">
+                            <h3 class="text-2xl">Freshers</h3>
+                            <p class="text-sm font-light">We can provide fresh college graduates for internships and as trainees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="relative h-20 w-full">
+            <div class="absolute w-full h-full">
+                <ul class="flex justify-start ml-5 space-x-11" style="color:#343434">
+                    <li><a href="#">©2023 DigiMoksha</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    <script>
+        let menu = document.querySelector("#menu")
+        let menuItems = document.querySelector("#menu_items")
+        menu.addEventListener("mouseover",()=>{
+            menuItems.classList.remove("hidden")
+            menu.classList.add("hidden")
+        })
+        menu.addEventListener("mouseleave",()=>{
+            menuItems.classList.add("hidden")
+            menu.classList.remove("hidden")
+        })
+    </script>
+</body>
+</html>
