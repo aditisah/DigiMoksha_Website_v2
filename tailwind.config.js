@@ -3,8 +3,13 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      colors: {
+        'custom-green': '#9FCC3B'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
 
