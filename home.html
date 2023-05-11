@@ -331,23 +331,28 @@
     })
 
 
-            const carousel = document.querySelector('.carousel');
-const carouselItems = carousel.querySelectorAll('.carousel-item');
-const smallImages = document.querySelectorAll('.small-img')
-const text=document.querySelectorAll('.text')
-console.log(text)
-let currentItemIndex = 0;
-console.log(smallImages)
-setInterval(() => {
+        const carousel = document.querySelector('.carousel');
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        const smallImages = document.querySelectorAll('.small-img')
+        const text=document.querySelectorAll('.text')
+        console.log(text)
+        let currentItemIndex = 0;
+        console.log(smallImages)
+    setInterval(() => {
+    //text[currentItemIndex].classList.add('animate-slide-right');
   carouselItems[currentItemIndex].style.opacity = 0;
   smallImages[currentItemIndex].style.opacity = 0.6;
-  text[currentItemIndex].classList.remove('animate-slide-left')
+  text[currentItemIndex].classList.remove('animate-slide-right')
 //   text[currentItemIndex].classList.add('animate-slide-right')
   currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
   carouselItems[currentItemIndex].style.opacity = 1;
   smallImages[currentItemIndex].style.opacity = 1;
   text[currentItemIndex].classList.add('animate-slide-left')
-  
+  setTimeout(() => {
+    text[currentItemIndex].classList.remove('animate-slide-left')
+    text[currentItemIndex].classList.add('animate-slide-right')
+    text[currentItemIndex].style.opacity=0
+  }, 2000);
 }, 3000);
 
 

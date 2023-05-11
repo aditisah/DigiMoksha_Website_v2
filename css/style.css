@@ -36,21 +36,22 @@
   }
   
   .animate-slide-left {
-    animation: slide-in-from-right 1s ease-in-out;
+    animation: slide-in-from-right 1s ease-in-out forwards;
   }
   @keyframes slide-in-from-left {
     0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
       transform: translateX(0%);
       opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
     }
   }
   
   .animate-slide-right {
-    animation: slide-in-from-left 2s ease-in-out;
+    animation: slide-in-from-left 1s ease-in-out forwards;
+    
   }
   
   .font-clash {
