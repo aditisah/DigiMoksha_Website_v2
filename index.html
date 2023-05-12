@@ -21,7 +21,7 @@
       <img src="./assets/logo_hd.png" alt="logo"/>
     </div>
     <nav class="flex items-center justify-end">
-      <div id="menu_items" class="hidden absolute top-[22px] left-[1415px] ml-4">
+      <div id="menu_items" class="hidden absolute top-[26px] lg:top-[22px] lg:left-[1415px] ml-4 z-20">
         <div class="h-[2px] w-9 ml-[37px] bg-black"></div>
                     <ul class="text-black text-right font-light">
                         <li class="mt-2">Home</li>
@@ -349,12 +349,12 @@
                 menu.classList.toggle("hidden")
               }
             })
-            menu.addEventListener("touchend",()=>{
-              if(window.innerWidth<=768){
-                menuItems.classList.add("hidden")
-                menu.classList.remove("hidden")
-              }
-            })
+            // menu.addEventListener("touchend",()=>{
+            //   if(window.innerWidth<=768){
+            //     menuItems.classList.add("hidden")
+            //     menu.classList.remove("hidden")
+            //   }
+           // })
 
            
             const el= document.querySelector("#part3")
