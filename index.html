@@ -342,14 +342,16 @@
                 menu.classList.remove("hidden")
               }
             })
-            menu.addEventListener("touchstart",()=>{
+            menu.addEventListener("touchstart",(e)=>{
+              e.preventDefault()
               if(window.innerWidth<=768){
                 console.log('hiiiii')
                 menuItems.classList.toggle("hidden")
                 menu.classList.toggle("hidden")
               }
             })
-             menu.addEventListener("touchend",()=>{
+             menu.addEventListener("touchend",(e)=>{
+              e.preventDefault()
                if(window.innerWidth<=768){
                 if (!menuItems.classList.contains("hidden")) {
 
