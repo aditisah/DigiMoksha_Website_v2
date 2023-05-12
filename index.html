@@ -120,7 +120,7 @@
               </div>
               
 
-              <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[580px] lg:mt-[620px]">
+              <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[560px] lg:mt-[620px]">
                 <div class="small-img opacity-100">
                     <img class="h-20" src="./assets/puzzle_small.png" alt="puzzle">
                 </div>
@@ -351,9 +351,12 @@
             })
              menu.addEventListener("touchend",()=>{
                if(window.innerWidth<=768){
+                if (!menuItems.classList.contains("hidden")) {
+
                  menuItems.classList.add("hidden")
                  menu.classList.remove("hidden")
                }
+              }
             })
 
            
