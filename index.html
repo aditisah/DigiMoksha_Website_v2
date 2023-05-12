@@ -331,12 +331,29 @@
             let menu = document.querySelector("#menu")
             let menuItems = document.querySelector("#menu_items")
             menu.addEventListener("mouseover",()=>{
+              if(window.innerWidth>768){
                 menuItems.classList.remove("hidden")
                 menu.classList.add("hidden")
+              }
             })
             menu.addEventListener("mouseleave",()=>{
+              if(window.innerWidth>768){
                 menuItems.classList.add("hidden")
                 menu.classList.remove("hidden")
+              }
+            })
+            menu.addEventListener("touchstart",()=>{
+              if(window.innerWidth<=768){
+                console.log('hiiiii')
+                menuItems.classList.toggle("hidden")
+                menu.classList.toggle("hidden")
+              }
+            })
+            menu.addEventListener("touchend",()=>{
+              if(window.innerWidth<=768){
+                menuItems.classList.add("hidden")
+                menu.classList.remove("hidden")
+              }
             })
 
            
