@@ -330,6 +330,7 @@
         <script>
             let menu = document.querySelector("#menu")
             let menuItems = document.querySelector("#menu_items")
+            let touchstartX
             menu.addEventListener("mouseover",()=>{
               if(window.innerWidth>768){
                 menuItems.classList.remove("hidden")
@@ -345,21 +346,27 @@
             menu.addEventListener("touchstart",(e)=>{
               e.preventDefault()
               if(window.innerWidth<=768){
-                console.log('hiiiii')
-                menuItems.classList.toggle("hidden")
-                menu.classList.toggle("hidden")
+                if (touchstartX === undefined) {
+      touchstartX = e.touches[0].clientX;
+      menuItems.classList.remove("hidden");
+      menu.classList.add("hidden");
+    } else {
+      touchstartX = undefined;
+      menuItems.classList.add("hidden");
+      menu.classList.remove("hidden");
+    }
               }
             })
-             menu.addEventListener("touchend",(e)=>{
-              e.preventDefault()
-               if(window.innerWidth<=768){
-                if (!menuItems.classList.contains("hidden")) {
+            //  menu.addEventListener("touchend",(e)=>{
+            //   e.preventDefault()
+            //    if(window.innerWidth<=768){
+            //     if (!menuItems.classList.contains("hidden")) {
 
-                 menuItems.classList.add("hidden")
-                 menu.classList.remove("hidden")
-               }
-              }
-            })
+            //      menuItems.classList.add("hidden")
+            //      menu.classList.remove("hidden")
+            //    }
+            //   }
+            // })
 
            
             const el= document.querySelector("#part3")
