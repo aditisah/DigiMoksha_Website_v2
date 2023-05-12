@@ -16,8 +16,32 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="relative">
-             <div class="h-12 mx-[300px] my-[45px]">
+  <header class="flex justify-between items-center px-4 py-2 mx-full lg:mx-40 bg-white-500">
+    <div class="relative h-10 w-28">
+      <img src="./assets/logo_hd.png" alt="logo"/>
+    </div>
+    <nav class="flex items-center justify-end">
+      <div id="menu_items" class="hidden absolute top-[22px] left-[1415px] ml-4">
+        <div class="h-[2px] w-9 ml-[37px] bg-black"></div>
+                    <ul class="text-black text-right font-light">
+                        <li class="mt-2">Home</li>
+                        <li>About us</li>
+                        <li>Service</li>
+                        <li>Academy</li>
+                        <li>Portfolio</li>
+                        <li class="mb-2">Contact</li>
+                    </ul>
+                    <div class="h-[2px] w-9 top-[1700px] left-[] ml-[37px] bg-black"></div>
+      </div>
+
+      <div id="menu" class="absolute cursor-pointer">
+        <div class="h-[2px] w-9 bg-black"></div>
+        <div class="h-[2px] w-9 bg-black mt-2"></div>
+    </div>
+    </nav>
+  </header>
+    <!-- <header class="relative">
+             <div class="h-12 max-w-[1640px] mx-[300px] my-[45px]">
                 <img class="absolute h-12 w-[122px] z-10" src="./assets/logo_hd.png" alt="logo">
                 <nav class="flex items-center justify-end w-full h-full">
                     <div id="menu" class="absolute cursor-pointer">
@@ -40,24 +64,24 @@
                 </div>
             </div>
             
-        </header> 
+        </header>  -->
         <!-- Section1 -->
         <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[790px] overflow-hidden overflow-x-hidden">
             <div class="relative h-[600px]">
               
 
-              <div class="lg:w-full flex items-center justify-center">
-                <div class="w-full mx-auto ">
+              <div class="lg:w-full flex flex-wrap items-center justify-center bg-red-300">
+                <div class="w-full h-full mx-auto bg-green-200">
                   <div class="carousel relative">
                     <div class="carousel-inner">
                       <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100">
                           <div class="relative flex w-full h-[500px]">
-                            <div id="image" class="w-1/2 h-full">
+                            <div id="image" class="w-full md:w-1/2 h-full">
                                 <img src="./assets/puzzle.png" alt="puzzle">
                             </div>
-                            <div class="text lg:w-1/2 lg:h-full">
+                            <div class="text w-full md:w-1/2 lg:h-full">
                                 <div class="h-1/3 mt-52 w-[440px]">
-                                    <p class="font-light text-left text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                                    <p class="font-light text-left text-3xl md:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Using Design to solve complex business problems
                                     </p>
                                 </div>
@@ -69,9 +93,9 @@
                             <div id="image" class="lg:w-1/2 lg:h-full">
                                 <img src="./assets/handshake_large.png" alt="handshake">
                             </div>
-                            <div class="text w-1/2 h-full">
+                            <div class="text w-full md:w-1/2 h-full">
                                 <div class="lg:h-1/3 mt-52 w-[440px]">
-                                    <p class="font-light text-left text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                                    <p class="font-light text-left  text-3xl md:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Filling up the empty chairs in your office
                                     </p>
                                 </div>
@@ -83,9 +107,9 @@
                             <div id="image" class="lg:w-1/2 lg:h-full">
                                 <img src="./assets/VR_large.png" alt="VR">
                             </div>
-                            <div class="text lg:w-1/2 lg:h-full">
+                            <div class="text w-full md:w-1/2 lg:h-full">
                                 <div class="h-1/3 mt-52 w-[440px]">
-                                    <p class="text-left text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                                    <p class="text-left text-3xl md:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Helping create better products, one app at a time
                                     </p>
                                 </div>
@@ -98,7 +122,7 @@
               </div>
               
 
-              <div id="small-images" class="flex justify-center space-x-8 lg:w-full lg:mt-[640px]">
+              <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[640px]">
                 <div class="small-img opacity-100">
                     <img class="h-20" src="./assets/puzzle_small.png" alt="puzzle">
                 </div>
