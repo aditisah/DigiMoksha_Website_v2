@@ -18,23 +18,24 @@
 <body>
   <header class="flex justify-between items-center px-4 py-3 mx-full lg:mx-40 bg-white-500">
     <div class="relative h-10 w-28">
-      <img src="./assets/logo_hd.png" alt="logo"/>
+      <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
     </div>
-    <nav class="flex items-center justify-end">
-      <div id="menu_items" class="hidden absolute top-[26px] lg:top-[22px] lg:left-[1415px] ml-4 z-20">
-        <div class="h-[2px] w-9 ml-[37px] bg-black"></div>
+    <nav class="menu flex items-center justify-end">
+      <div id="menu-items" class="hidden absolute top-[26px] lg:top-[26px] lg:left-[1400px] ml-4 z-20">
+        <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                     <ul class="text-black text-right font-light">
-                        <li class="mt-2">Home</li>
+                        <a href="./index.html"><li class="mt-2">Home</li></a>
                         <li>About us</li>
-                        <li>Service</li>
+                        <li><a href="./engineering/engineering.html">Engineering</a></li>
+                        <li>Design</li>
                         <li>Academy</li>
                         <li>Portfolio</li>
                         <li class="mb-2">Contact</li>
                     </ul>
-                    <div class="h-[2px] w-9 top-[1700px] left-[] ml-[37px] bg-black"></div>
+                    <div class="h-[2px] w-9 top-[1700px] ml-[52px] bg-black"></div>
       </div>
 
-      <div id="menu" class="absolute cursor-pointer">
+      <div id="menu-button" class="absolute cursor-pointer">
         <div class="h-[2px] w-9 bg-black"></div>
         <div class="h-[2px] w-9 bg-black mt-2"></div>
     </div>
@@ -50,7 +51,7 @@
                     </div>
                     
                 </nav>
-                <div id="menu_items" class="hidden absolute top-[18px] left-[1307px]">
+                <div id="-" class="hidden absolute top-[18px] left-[1307px]">
                     <div class="h-[2px] w-9 ml-[37px] bg-black"></div>
                     <ul class="text-black text-right font-light">
                         <li class="mt-2">Home</li>
@@ -138,7 +139,7 @@
             <div class="relative flex flex-wrap items-start mt-6 h-1/5">
               
               <div
-                class="relative w-full lg:w-1/3 h-full lg:w-1/2 z-10 mt-5 text-center"
+                class="relative w-full h-full lg:w-1/2 z-10 mt-5 text-center"
                 data-aos="fade-left"
                 data-aos-delay="500"
                 data-aos-duration="800"
@@ -197,7 +198,7 @@
                         <img class="grayscale opacity-40 h-full w-full hover:grayscale-0 hover:opacity-100" src="./assets/volkswagen.jpeg">
                     </div>
                     <div class="h-24 w-24">
-                        <img class="grayscale opacity-40 h-full w-full hover:grayscale-0 hover:opacity-100 transition" src="./assets/univision.jpeg">
+                        <img class="grayscale opacity-40 h-full w-full logo hover:logo-hover hover:grayscale-0 hover:opacity-100 transition-transform duration-300" src="./assets/univision.jpeg">
                     </div>
                     <div class="h-24 w-24">
                         <img class="grayscale opacity-40 h-full w-full hover:grayscale-0 hover:opacity-100" src="./assets/univision.jpeg">
@@ -328,19 +329,20 @@
   </section>
   <script>AOS.init()</script>
         <script>
-            let menu = document.querySelector("#menu")
-            let menuItems = document.querySelector("#menu_items")
+            let menuButton = document.querySelector("#menu-button")
+            let menuItems = document.querySelector("#menu-items")
+            let menu = document.querySelector(".menu")
             let touchstartX
-            menu.addEventListener("mouseover",()=>{
+            menuButton.addEventListener("mouseover",()=>{
               if(window.innerWidth>768){
                 menuItems.classList.remove("hidden")
-                menu.classList.add("hidden")
+                menuButton.classList.add("hidden")
               }
             })
             menu.addEventListener("mouseleave",()=>{
               if(window.innerWidth>768){
                 menuItems.classList.add("hidden")
-                menu.classList.remove("hidden")
+                menuButton.classList.remove("hidden")
               }
             })
             menu.addEventListener("touchstart",(e)=>{

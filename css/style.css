@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +16,16 @@
     font-style: normal;
   }
   
+  @font-face {
+    font-family: 'Sombra Variable DEMO';
+    src: url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.ttf') format('truetype'),
+     url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff') format('woff'),
+     url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff2') format('woff2');
+    /* Add additional src declarations here for other font formats */
+    font-weight: normal;
+    font-style: normal;
+  }
+   
 
   .font-schadow {
     font-family: 'Schadow BT';
@@ -22,9 +34,16 @@
     font-family: 'Merriweather', serif;
   }
   .font-montserrat {
-    font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
   }
+
+  .font-ibm-plex-serif {
+    font-family: 'IBM Plex Serif', serif;
+  }
+  .font-sombra {
+    font-family: 'Sombra', sans-serif;
+  }
+  
   body {
     font-family: 'Inter', sans-serif;
   }
@@ -63,6 +82,16 @@
     font-family: 'Clash Display', sans-serif;
   }
   
-    
+  .logo {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .logo:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+
   
   
