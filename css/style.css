@@ -18,9 +18,7 @@
   
   @font-face {
     font-family: 'Sombra Variable DEMO';
-    src: url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.ttf') format('truetype'),
-     url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff') format('woff'),
-     url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff2') format('woff2');
+    src: url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff') format('woff');
     /* Add additional src declarations here for other font formats */
     font-weight: normal;
     font-style: normal;
