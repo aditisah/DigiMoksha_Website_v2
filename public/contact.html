@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <title>Contact</title>
+</head>
+<body>
+    <header class="flex justify-between items-center px-4 py-3 mx-full lg:mx-40 bg-white-500">
+        <div class="relative h-10 w-28">
+          <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
+        </div>
+        <nav class="menu flex items-center justify-end">
+          <div id="menu-items" class="hidden absolute top-[26px] lg:top-[26px] lg:left-[1400px] ml-4 z-20">
+            <div class="h-[2px] w-9 lg:ml-[52px] bg-black"></div>
+                        <ul class="text-black text-right font-light">
+                            <li class="mt-2"><a href="./index.html">Home</a></li>
+                            <li><a href="./about-us.html">About us</a></li>
+                            <li><a href="./engineering.html">Engineering</a></li>
+                            <li><a href="./design.html">Design</a></li>
+                            <li><a href="./academy.html">Academy</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="mb-2"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <div class="h-[2px] w-9 top-[1700px] lg:ml-[52px] bg-black"></div>
+          </div>
+    
+          <div id="menu-button" class="absolute cursor-pointer">
+            <div class="h-[2px] w-9 bg-black"></div>
+            <div class="h-[2px] w-9 bg-black mt-2"></div>
+        </div>
+        </nav>
+      </header>
+      <script>
+        let menuButton = document.querySelector("#menu-button")
+        let menuItems = document.querySelector("#menu-items")
+        let menu = document.querySelector(".menu")
+        let touchstartX
+        menuButton.addEventListener("mouseover",()=>{
+          if(window.innerWidth>768){
+            menuItems.classList.remove("hidden")
+            menuButton.classList.add("hidden")
+          }
+        })
+        menu.addEventListener("mouseleave",()=>{
+          if(window.innerWidth>768){
+            menuItems.classList.add("hidden")
+            menuButton.classList.remove("hidden")
+          }
+        })
+        menu.addEventListener("touchstart",(e)=>{
+          e.preventDefault()
+          if(window.innerWidth<=768){
+            if (touchstartX === undefined) {
+  touchstartX = e.touches[0].clientX;
+  menuItems.classList.remove("hidden");
+  menu.classList.add("hidden");
+} else {
+  touchstartX = undefined;
+  menuItems.classList.add("hidden");
+  menu.classList.remove("hidden");
+}
+          }
+        })
+        </script>
+</body>
+</html>
