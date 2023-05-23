@@ -15,9 +15,13 @@
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap" rel="stylesheet"/>
     <title>Document</title>
 </head>
-<body>
+<body class="bg-[#F5F5F5]">
+  <div class="relative">
+    <div class="absolute left-0 right-0 bottom-[1100px] -top-[960px] bg-[url('./assets/design_background.png')] bg-cover bg-center">
+      <div class="md:h-[800px]"></div>
+    </div>
     <!-- header -->
-    <header class="flex justify-between items-center px-4 py-3 mx-5 lg:mx-40 bg-white-500">
+    <header class="flex justify-between items-center px-4 py-3 mx-5 lg:mx-[250px] bg-white-500">
         <div class="relative h-10 w-28">
           <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
         </div>
@@ -42,7 +46,7 @@
         </nav>
       </header>
       <!-- Section1 -->
-    <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[649px] md:h-[890px] overflow-hidden overflow-x-hidden">
+    <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[649px] md:h-[700px] overflow-hidden overflow-x-hidden">
       <div class="relative h-[350px] md:h-[600px]">
         <div class="lg:w-full flex flex-wrap items-center justify-center">
           <div class="w-full h-full mx-auto">
@@ -51,11 +55,11 @@
                 <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100"> -->
                     <div class="relative flex flex-wrap w-full h-[550px] md:h-[620px]">
                       <div id="image" class=" relative w-full md:w-1/2 h-2/3 lg:h-full">
-                          <img class="absolute" src="./assets/shape 2.png" alt="background_img" data-aos="zoom-out" data-aos-duration="1200">
-                          <img class="absolute" src="./assets/andrew 2.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1200">
+                          <img class="absolute" src="./assets/design_background_img.svg" alt="background_img" data-aos="zoom-out" data-aos-duration="1000">
+                          <img class="absolute" src="./assets/design.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1000">
                       </div>
                         <div class="text w-full md:w-1/2 h-1/3 md:h-full">
-                            <div class="h-1/3 mt-7 md:mt-36 lg:mt-52 2xl:mt-64 w-full md:w-[440px] 2xl:w-[500px]" data-aos="fade-left" data-aos-duration="1200">
+                            <div class="h-1/3 mt-7 md:mt-36 lg:mt-52 2xl:mt-64 w-full md:w-[440px] 2xl:w-[500px]" data-aos="fade-left" data-aos-offset="50%" data-aos-duration="1200">
                                 <p class="font-light text-center md:text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                     Using Design to solve complex business problems
                                 </p>
@@ -90,9 +94,9 @@
                             </div>
                         </div>
                       </div>
-                  </div>
+                  <!-- </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           
@@ -111,39 +115,43 @@
         </div>
       </section>
       <!-- Section2 -->
-      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[300px] lg:h-[500px] overflow-hidden overflow-x-hidden">
-        <div class="relative flex flex-wrap items-start bg-red-200">
+      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] lg:h-[1200px] overflow-hidden overflow-x-hidden">
+        <div class="relative flex flex-wrap items-start">
           <div class="mr-3 lg:mr-44">
             <span
-            class="text-3xl lg:text-5xl font-semibold block text-left text-[#9FCC3B] font-clash"
-            >Our User Centric approach ensures increased adoption</span
+            class="text-3xl lg:text-6xl font-semibold block text-left text-[#9FCC3B] font-clash"
+            >Our Design First approach ensures delightful products</span
           >
           </div>
            <div class="mr-4 lg:mr-36">
-            <p class="font-ibm-plex-serif font-bold text-xl lg:text-2xl text-left pt-4">
-                Nulla fringilla rhoncus lacus a dignissim. Suspendisse mattis neque varius enim gravida posuere.
+            <p class="font-merriweather font-semibold text-xl lg:text-3xl text-left text-[#9FCC3B] pt-4">
+              Your partner in digital transformation, design and people solutions.
             </p>
             </div>
             <div class="mr-1 lg:mr-48">
-            <p class="font-ibm-plex-serif font-medium text-lg font-merriweather text-left mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum a eros vitae volutpat. Nullam massa magna, viverra in ullamcorper sed, fermentum in sem. Praesent cursus malesuada orci. Praesent a feugiat elit, vel ultrices felis. </p>
-            <p class="font-ibm-plex-serif font-medium text-lg font-merriweather text-left mt-2">Nullam nec maximus urna. Phasellus ut libero nec massa ultricies finibus. Nulla pharetra rhoncus orci at venenatis. Mauris sit amet sodales est. </p>
-            <p class="font-ibm-plex-serif font-medium text-lg font-merriweather text-left mt-2">Duis viverra, est vel luctus interdum, risus metus faucibus lorem, ut suscipit massa elit a leo. Nulla fringilla rhoncus lacus a dignissim. Suspendisse mattis neque varius enim gravida posuere. Nullam laoreet odio vitae velit tristique molestie.</p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">We are passionate about creating digital products that prioritize the user, delivering delightful experiences that leave a lasting impact. In today's digital era, where user expectations are higher than ever, it is essential to have a user-centric approach that sets you apart from the competition.</p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">At DigiMoksha, we believe that great design begins with a deep understanding of the user. We employ rigorous user research methods to uncover insights into their needs, behaviors, and pain points. Armed with these insights, our talented team of UX designers crafts intuitive and visually compelling interfaces that not only meet user expectations but also exceed them.</p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">Our user-centric approach permeates every stage of the design process. We collaborate closely with our clients to align their business goals with the needs of their target audience, ensuring that the final product strikes the perfect balance between functionality and aesthetics. Through iterative prototyping and user testing, we refine our designs to create seamless and engaging experiences that users will love. </p>
+            <p class="font-light text-lg font-merriweather text-left mt-4"> We understand that a delightful user experience goes beyond just visual appeal. It encompasses factors such as ease of use, accessibility, and emotional connection. Our team pays meticulous attention to detail, ensuring that every interaction and touchpoint within the digital product is thoughtfully designed to evoke positive emotions and forge a strong connection with users. </p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">From mobile apps to web platforms, we have a proven track record of successfully transforming ideas into exceptional digital products across a range of industries. Our expertise extends beyond design aesthetics to encompass information architecture, interaction design, and usability, resulting in products that are intuitive, efficient, and enjoyable to use.</p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">At DigiMoksha, we not only focus on delivering exceptional design but also prioritize effective collaboration and transparent communication with our clients. We understand the importance of your vision and goals, and we work hand-in-hand with you to bring them to life. Our process is agile and adaptable, allowing us to respond to your evolving needs and deliver results within timelines and budgets. </p>
+            <p class="font-light text-lg font-merriweather text-left mt-4">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience. Together, we will shape the future of your digital presence with UX design that is truly user-centric and delightful.</p>
            </div>
             
           </div>
           </section>
-
+        </div>
             <!-- Section3 -->
       <section
-      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-yellow-500 h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
-    <div class="w-full mx-5 lg:mx-[300px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash">Design Services</h1></div>
-    <div class=" absolute flex mx-5 lg:mx-[300px] w-full h-full py-[70px]">
+    <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash font-bold">Design Services</h1></div>
+    <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
 
       <div id="part1" class="w-1/5" data-aos="fade-right" data-aos-duration="1000">
-        <span id="title" class="font-merriweather font-medium text-xl lg:text-4xl">UX Design Services</span>
-          <p id="info" class="font-thin font-merriweather pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar sem nulla, et scelerisque purus efficitur quis. Pellentesque commodo justo quis magna auctor, vitae blandit libero fermentum. Aliquam dapibus felis in faucibus ultricies. Donec a libero id mauris gravida porta blandit sit amet leo.</p>
-          <button class="h-10 w-40 mt-4 bg-blue-500 text-white font-light">Know More</button>
+        <span id="title" class="font-clash font-medium text-xl lg:text-4xl">UX Design Services</span>
+          <p id="info" class="font-thin font-merriweather pt-3">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+          <button class="h-16 w-40 mt-4 border border-black rounded-full bg-transparent text-black font-clash font-semibold text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
       </div>
         <div id="part2" class="w-1/4" data-aos="fade-up" data-aos-duration="1000">
           <img src ="./assets/gamingLarge.png" data-aos="fade-up">
@@ -151,28 +159,32 @@
         <div id="part3" class="w-1/5">
           <div class="tele-med flex flex-col justify-center group transition duration-300">
             <div class="cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-              <span class="title-info font-merriweather font-medium text-lg lg:text-2xl">UX Design</span>
-                  <p class="pp font-thin font-merriweather block">Thfringilla imperdiet dolor hendrerit nec.</p>
+              <span class="title-info font-clash font-semibold text-lg lg:text-2xl">UX Design</span>
+                  <p class="hidden font-thin font-merriweather">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+                  <p class="pp font-thin font-merriweather block">User Experiences that captivate, engage, and inspire, driving meaningful connections</p>
               </div>
           </div>
           <div class="flex flex-col justify-center group transition duration-300 text-black">
           <div class="pt-3 cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-merriweather font-medium text-lg lg:text-2xl">Service Design</span>
-              <p class="font-thin font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
+            <span class="title-info font-clash font-semibold text-lg lg:text-2xl">Service Design</span>
+              <p class="hidden font-thin font-merriweather">Unlock the power of exceptional service experiences with our service design expertise. Our team of experts seamlessly blends strategy, innovation, and user-centric thinking to create services that delight customers and drive business growth. From mapping customer journeys to designing intuitive interfaces, we transform your vision into tangible, memorable experiences that set you apart in today's competitive landscape.</p>
+              <p class="font-thin font-merriweather">Elevate your service offerings and leave a lasting impression with our service design solutions.</p>
           </div>
           </div>
 
           <div class=" flex group transition duration-300">
           <div class="pt-3 cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-merriweather font-medium text-lg lg:text-2xl"><a href="./design-thinking.html">Design Thinking Workshop</a></span>
-              <p class="font-thin font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
+            <span class="title-info font-clash font-semibold text-lg lg:text-2xl"><a href="./design-thinking.html">Design Thinking Workshop</a></span>
+            <p class="hidden font-thin font-merriweather">Ignite innovation and drive transformative change with our design thinking workshops. Our immersive sessions empower leaders with the tools and mindset to tackle complex challenges, foster creativity, and develop customer-centric solutions. Through collaborative exercises and real-world case studies, we unlock the potential for innovative thinking, enabling executives to drive strategic growth and build a culture of innovation. Prepare your leaders to think differently and shape the future with our dynamic design thinking workshops.</p>
+            <p class="font-thin font-merriweather">Ignite innovation and drive transformative change with our design thinking workshops</p>
           </div>
           </div>
 
           <div class=" flex group transition duration-300">
           <div class="pt-3 cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-merriweather font-medium text-lg lg:text-2xl">Design Advisory</span>
-              <p class="font-thin font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
+            <span class="title-info font-clash font-semibold text-lg lg:text-2xl">Design Advisory</span>
+            <p class="hidden font-thin font-merriweather">Our design advisory services helps businesses create exceptional user experiences. With deep expertise in user research, information architecture, and interaction design, we offer strategic guidance and actionable insights to optimize digital products and services. Our design advisors collaborate closely with clients, leveraging industry best practices and user-centered methodologies to deliver impactful solutions that exceed user expectations and drive business success.</p>
+            <p class="font-thin font-merriweather">Design Advisory services that helps you create exceptional user experiences.</p>
           </div>
           </div>
         </div>

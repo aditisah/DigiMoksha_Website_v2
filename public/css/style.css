@@ -76,6 +76,57 @@
     
   }
   
+  @keyframes img1ZoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+  
+  .img1-zoom-in {
+    animation: img1ZoomIn 1s;
+  }
+ 
+  @keyframes img1ZoomOut {
+    from {
+      transform: scale(2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .img1-zoom-out {
+    animation: img1ZoomOut 1s;
+  }
+  @keyframes img2ZoomIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .img2-zoom-in {
+    animation: img2ZoomIn 1s;
+  }
+ 
+  @keyframes img2ZoomOut {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.5);
+    }
+  }
+  
+  .img2-zoom-out {
+    animation: img2ZoomOut 1s;
+  }
+  
   .font-clash {
     font-family: 'Clash Display', sans-serif;
   }
@@ -87,6 +138,24 @@
   .logo:hover {
     transform: translateX(10px);
     transition: transform 0.3s ease-in-out;
+  }
+  
+  .wavy-section {
+    position: relative;
+    background-color: #f1f1f1; /* Replace with your desired background color */
+    padding: 20px;
+  }
+  
+  .wavy-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-45deg, transparent 16px, #f1f1f1 0), linear-gradient(45deg, transparent 16px, #f1f1f1 0);
+    background-size: 32px 32px;
+    pointer-events: none;
   }
   
   

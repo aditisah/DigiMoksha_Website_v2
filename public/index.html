@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-  <header class="flex justify-between items-center px-4 py-3 mx-5 lg:mx-40 bg-white-500">
+  <header class="flex justify-between items-center px-4 py-3 mx-5 lg:mx-[250px] bg-white-500">
     <div class="relative h-10 w-28">
       <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
     </div>
@@ -73,13 +73,15 @@
                 <div class="w-full h-full mx-auto">
                   <div class="carousel relative">
                     <div class="carousel-inner">
-                      <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100">
+                      <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-100">
                           <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div id="image" class="w-[76%] lg:w-1/2 h-2/3 lg:h-full mx-auto">
-                                <img src="./assets/puzzle.png" alt="puzzle">
+                            <div class="relative w-[76%] md:w-1/2 h-2/3 lg:h-full">
+                                <!-- <img src="./assets/puzzle.png" alt="puzzle"> -->
+                                <img class="img1 absolute img1-zoom-out z-0" src="./assets/shape 2.png" alt="background_img">
+                            <img class="img2 absolute img2-zoom-in z-10" src="./assets/andrew 2.png" alt="puzzle">
                             </div>
                             <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                                <div class="h-1/3 mt-7 md:mt-40 lg:mt-52 w-full lg:w-[540px] overflow-wrap">
+                                <div class="h-1/3 mt-7 md:mt-40 lg:mt-52 w-full lg:w-[540px] animate-slide-left overflow-wrap">
                                     <p class="font-light text-center lg:text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Using Design to solve complex business problems
                                     </p>
@@ -87,10 +89,11 @@
                             </div>
                           </div>
                       </div>
-                      <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-0">
+                      <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
                         <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div id="image" class="lg:w-1/2 h-2/3 lg:h-full w-[76%] mx-auto">
-                                <img src="./assets/handshake_large.png" alt="handshake">
+                            <div class="relative lg:w-1/2 h-2/3 lg:h-full w-[76%]">
+                              <img class="img1 absolute z-0" src="./assets/shape 2.png" alt="background_img">
+                              <img class="img2 absolute z-10" src="./assets/andrew 2.png" alt="puzzle">
                             </div>
                             <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
                                 <div class="lg:h-1/3 mt-7 md:mt-40 lg:mt-52 lg:w-[540px] overflow-wrap">
@@ -101,10 +104,11 @@
                             </div>
                           </div>
                       </div>
-                      <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-0">
+                      <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
                         <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div id="image" class="lg:w-1/2 h-2/3 lg:h-full w-[76%] mx-auto">
-                                <img src="./assets/VR_large.png" alt="VR">
+                            <div class="relative lg:w-1/2 h-2/3 lg:h-full w-[76%]">
+                              <img class="img1 absolute z-0" src="./assets/shape 2.png" alt="background_img">
+                              <img class="img2 absolute z-10" src="./assets/andrew 2.png" alt="puzzle">
                             </div>
                             <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
                                 <div class="h-1/3 mt-7 md:mt-40 lg:mt-52 lg:w-[540px] overflow-wrap">
@@ -135,7 +139,7 @@
             </div>
           </section>
           <!-- Section2 -->
-          <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[300px] lg:h-[1100px] overflow-hidden overflow-x-hidden">
+          <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] lg:h-[1100px] overflow-hidden overflow-x-hidden">
             <div class="relative flex flex-wrap items-start h-1/5">
               
               <div
@@ -224,13 +228,14 @@
       <section
       class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-yellow-500 h-[930px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
-    <div class="w-full mx-5 lg:mx-[300px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash">How we can help you?</h1></div>
-    <div class=" absolute flex mx-5 lg:mx-[300px] w-full h-full py-[70px]">
+    <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash">How we can help you?</h1></div>
+    <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
 
       <div id="part1" class="w-1/5" data-aos="fade-right" data-aos-duration="1000">
         <span id="title" class="font-merriweather font-medium text-xl lg:text-4xl">Levereging Intelligence of the machine</span>
           <p id="info" class="font-thin font-merriweather pt-3">Every project is unique, and we give each engagement a unique treatment.We believe that a product and service has an entire eco-system of it's own of which the users, the competition, are just two of many parts.</p>
-          <button class="h-10 w-40 mt-4 bg-blue-500 text-white font-light">Get AI/ML Help</button>
+          <!-- <button class="h-10 w-40 mt-4 bg-blue-500 text-white font-light">Get AI/ML Help</button> -->
+          <button class="h-16 w-40 mt-4 border border-black rounded-full bg-transparent text-black font-clash font-semibold text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
       </div>
         <div id="part2" class="w-1/4" data-aos="fade-up" data-aos-duration="1000">
           <img src ="./assets/gamingLarge.png" data-aos="fade-up">
@@ -284,7 +289,7 @@
     <section
       class="relative z-10 pt-4 lg:py-4 xl:py-4 2xl:py-4 lg:h-[400px] bg-black overflow-hidden overflow-x-hidden"
     >
-    <div class="flex flex-wrap h-[99%] lg:w-full mx-5 lg:mx-[300px] py-6">
+    <div class="flex flex-wrap h-[90%] lg:w-full mx-5 lg:mx-[250px] py-6">
       <div class="w-[70%] lg:w-1/4">
         <div class="lg:mt-14">
           <span class="font-merriweather font-medium text-2xl lg:text-3xl text-white">Sales Team</span>
@@ -326,7 +331,7 @@
       </div>
       
     </div>
-    <div class="h-[9%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
+    <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
   <script>AOS.init()</script>
         <script>
@@ -393,20 +398,66 @@
         const carouselItems = carousel.querySelectorAll('.carousel-item');
         const smallImages = document.querySelectorAll('.small-img')
         const text=document.querySelectorAll('.text')
-        console.log(text)
+        const img1 = document.querySelectorAll('.img1')
+        const img2 = document.querySelectorAll('.img2')
+       
         let currentItemIndex = 0;
-        console.log(smallImages)
+        
+        console.log(img1)
+        setTimeout(() => {
+         
+          img1[currentItemIndex].classList.remove('img1-zoom-out')
+          img1[currentItemIndex].classList.add('img1-zoom-in')
+  img2[currentItemIndex].classList.remove('img2-zoom-in')
+  
+  // console.log(img1)
+  // console.log(img2)
+
+  img2[currentItemIndex].classList.add('img2-zoom-out')
+   carouselItems[currentItemIndex].style.opacity = 0
+  // img1[currentItemIndex].style.opacity = 0;
+  // img2[currentItemIndex].style.opacity = 0;
+  // console.log(img2)
+  // img2[currentItemIndex].setAttribute('data-aos-delay', '0')
+  console.log(img1)
+  
+          text[currentItemIndex].classList.remove('animate-slide-left')
+          text[currentItemIndex].classList.add('animate-slide-right')
+          text[currentItemIndex].style.opacity=0
+        }, 4000);
     setInterval(() => {
     //text[currentItemIndex].classList.add('animate-slide-right');
   carouselItems[currentItemIndex].style.opacity = 0;
+  // img1[currentItemIndex].style.opacity = 0;
+  // img2[currentItemIndex].style.opacity = 0;
+  img1[currentItemIndex].classList.remove('img1-zoom-in')
+  img2[currentItemIndex].classList.remove('img2-zoom-out')
   smallImages[currentItemIndex].style.opacity = 0.6;
+  if(text[currentItemIndex].classList.contains('animate-slide-right')){
   text[currentItemIndex].classList.remove('animate-slide-right')
+  }
 //   text[currentItemIndex].classList.add('animate-slide-right')
+
   currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
-  carouselItems[currentItemIndex].style.opacity = 1;
+  
+  
   smallImages[currentItemIndex].style.opacity = 1;
+  carouselItems[currentItemIndex].style.opacity = 1;
+  // img1[currentItemIndex].style.opacity = 1;
+  // img2[currentItemIndex].style.opacity = 1;
+  img1[currentItemIndex].classList.add('img1-zoom-out')
+  img2[currentItemIndex].classList.add('img2-zoom-in')
+  console.log(img1)
+  
   text[currentItemIndex].classList.add('animate-slide-left')
   setTimeout(() => {
+    img1[currentItemIndex].classList.remove('img1-zoom-out')
+  img2[currentItemIndex].classList.remove('img2-zoom-in')
+  img1[currentItemIndex].classList.add('img1-zoom-in')
+  img2[currentItemIndex].classList.add('img2-zoom-out')
+  carouselItems[currentItemIndex].style.opacity = 0;
+  // img1[currentItemIndex].style.opacity = 0;
+  // img2[currentItemIndex].style.opacity = 0;
     text[currentItemIndex].classList.remove('animate-slide-left')
     text[currentItemIndex].classList.add('animate-slide-right')
     text[currentItemIndex].style.opacity=0
