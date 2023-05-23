@@ -157,6 +157,14 @@
     background-size: 32px 32px;
     pointer-events: none;
   }
+
+  
+    @media only screen and (min-width: 1366) {
+      .design-background{
+
+        background-size: 1540px 1400px;
+    }
+  }
   
   
 
