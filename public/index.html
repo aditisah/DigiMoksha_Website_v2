@@ -24,6 +24,7 @@
 
       <div id="menu-button" class="absolute cursor-pointer">
         <div class="h-[2px] w-9 bg-black"></div>
+        <p class="hidden active-page mt-2"><a href="./engineering.html">d</a></p>
         <div class="h-[2px] w-9 bg-black mt-2"></div>
     </div>
       <div id="menu-items" class="hidden absolute top-[26px] justify-end z-20">
@@ -331,6 +332,7 @@
       </div>
       
     </div>
+    
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
   <script>AOS.init()</script>
@@ -363,6 +365,15 @@
       menuItems.classList.add("hidden");
       menuButton.classList.remove("hidden");
     }
+              }
+            })
+
+            let activePage = document.querySelector('.active-page')
+            menuItems.addEventListener('click', (event)=>{
+              if(event.target.tagName == 'A'){
+                activePage.classList.remove('hidden')
+              activePage.textContent = event.target.nextElementSibling.textContent
+              console.log(activePage.textContent)
               }
             })
             //  menu.addEventListener("touchend",(e)=>{

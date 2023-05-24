@@ -47,7 +47,7 @@
     <section
     class="relative z-10 pt-4 lg:py-4 xl:py-4 2xl:py-4 lg:h-[400px] bg-black overflow-hidden overflow-x-hidden"
   >
-  <div class="flex flex-wrap h-[99%] lg:w-full mx-5 lg:mx-[250px] py-6">
+  <div class="flex flex-wrap h-[90%] lg:w-full mx-5 lg:mx-[250px] py-6">
     <div class="w-[70%] lg:w-1/4">
       <div class="lg:mt-14">
         <span class="font-merriweather font-medium text-2xl lg:text-3xl text-white">Sales Team</span>
@@ -89,7 +89,7 @@
     </div>
     
   </div>
-  <div class="h-[9%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
+  <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
 </section>
       <script>
         let menuButton = document.querySelector("#menu-button")
@@ -122,6 +122,21 @@
 }
           }
         })
+
+        let activePage = document.querySelector('.active-page')
+        let storedPage = localStorage.getItem('activePage');
+if (storedPage) {
+  activePage.textContent = storedPage;
+}
+
+menuItems.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    let listItemText = event.target.textContent;
+    activePage.textContent = listItemText;
+    localStorage.setItem('activePage', listItemText);
+    console.log(listItemText);
+  }
+});
         </script>
 </body>
 </html>
