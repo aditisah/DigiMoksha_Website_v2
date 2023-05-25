@@ -159,12 +159,15 @@
   }
 
   
-    @media only screen and (min-width: 1366) {
-      .design-background{
-
-        background-size: 1540px 1400px;
+    .white-bullet::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 8px;
     }
-  }
   
   
 

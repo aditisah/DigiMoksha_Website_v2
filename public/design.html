@@ -160,16 +160,16 @@
           <img id="service-front-img" class="absolute md:left-20 2xl:left-32 md:top-24 2xl:top-14 h-52 w-5h-52" src ="./assets/services-ux-design.png" data-aos="fade-up">
         </div>
         <div id="part3" class="w-1/5">
-          <div class="tele-med flex flex-col justify-center group transition duration-300">
-            <div class="transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
+          <div class="tele-med flex flex-col justify-center">
+            <div data-aos="fade-up-left" data-aos-duration="1000">
               <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">UX Design</span>
               <p class="hidden font-thin font-merriweather leading-7 md:leading-10">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
                   <p class="pp font-thin md:text-sm font-merriweather block">User Experiences that captivate, engage, and inspire, driving meaningful connections</p>
                   <img class="hidden service-img" src="./assets/services-ux-design.png">
                 </div>
           </div>
-          <div class="flex flex-col justify-center group transition duration-300 text-black">
-          <div class="pt-3 transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
+          <div class="flex flex-col justify-center text-black">
+          <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Service Design</span>
             <p class="hidden font-thin font-merriweather">Unlock the power of exceptional service experiences with our service design expertise. Our team of experts seamlessly blends strategy, innovation, and user-centric thinking to create services that delight customers and drive business growth. From mapping customer journeys to designing intuitive interfaces, we transform your vision into tangible, memorable experiences that set you apart in today's competitive landscape.</p>
               <p class="font-thin md:text-sm font-merriweather">Elevate your service offerings and leave a lasting impression with our service design solutions.</p>
@@ -177,8 +177,8 @@
             </div>
           </div>
 
-          <div class=" flex group transition duration-300">
-          <div class="pt-3 transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
+          <div class=" flex">
+          <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Design Thinking Workshop</span>
             <p class="hidden font-thin font-merriweather">Ignite innovation and drive transformative change with our design thinking workshops. Our immersive sessions empower leaders with the tools and mindset to tackle complex challenges, foster creativity, and develop customer-centric solutions. Through collaborative exercises and real-world case studies, we unlock the potential for innovative thinking, enabling executives to drive strategic growth and build a culture of innovation. Prepare your leaders to think differently and shape the future with our dynamic design thinking workshops.</p>
             <p class="font-thin md:text-sm font-merriweather">Ignite innovation and drive transformative change with our design thinking workshops</p>
@@ -186,8 +186,8 @@
           </div>
           </div>
 
-          <div class=" flex group transition duration-300">
-          <div class="pt-3 transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
+          <div class=" flex">
+          <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Design Advisory</span>
             <p class="hidden font-thin font-merriweather">Our design advisory services helps businesses create exceptional user experiences. With deep expertise in user research, information architecture, and interaction design, we offer strategic guidance and actionable insights to optimize digital products and services. Our design advisors collaborate closely with clients, leveraging industry best practices and user-centered methodologies to deliver impactful solutions that exceed user expectations and drive business success.</p>
             <p class="font-thin md:text-sm font-merriweather">Design Advisory services that helps you create exceptional user experiences.</p>
@@ -292,10 +292,26 @@
     const title = document.querySelector('#title');
     const info = document.querySelector('#info');
     const serviceFrontImage = document.querySelector('#service-front-img');
+    const service = document.querySelector('#service');
+    const t = document.querySelectorAll('.service');
+    let preiviouslyClickedBlock = null
+    let previouslyClickedServiceTitle = null
     el.addEventListener('click',(event)=>{
         if(event.target.classList.contains("title-info")){
             // const text = event.target.querySelector("span").textContent
             // console.log(text)
+            if(preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!==null){
+          preiviouslyClickedBlock.style.transform = ''
+          previouslyClickedServiceTitle.style.color = ''
+          previouslyClickedServiceTitle.classList.remove('white-bullet')
+            }
+            event.target.parentElement.style.transform = 'translateX(-28px)'
+             
+            console.log(event.target.parentElement)
+            event.target.style.color = '#317FEB'
+            event.target.classList.add('white-bullet')
+            preiviouslyClickedBlock = event.target.parentElement
+            previouslyClickedServiceTitle = event.target
              title.textContent = event.target.textContent
              info.textContent = event.target.nextElementSibling.textContent
              console.log(info.textContent)
@@ -311,6 +327,15 @@
         // document.getElementById("title").innerHTML = text
         //document.getElementById("info").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     })
+
+    window.addEventListener("scroll", function() {
+    if (preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!== null) {
+      //resetPosition(prevClickedDiv);
+      preiviouslyClickedBlock.style.transform = ''
+      previouslyClickedServiceTitle.style.color = ''
+      previouslyClickedServiceTitle.classList.remove('white-bullet')
+    }
+  });
           </script>
 </body>
 </html>
