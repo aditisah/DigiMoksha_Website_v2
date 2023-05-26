@@ -149,23 +149,23 @@
     <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
 
       <div id="part1" class="w-1/5" data-aos="fade-right" data-aos-duration="1000">
-        <span id="title" class="font-clash font-medium text-xl lg:text-3xl">Product Development</span>
-          <p id="info" class="font-thin md:text-sm font-merriweather leading-9 pt-3">The IT company provides comprehensive product development services, guiding clients from concept to launch. Their expertise spans requirements analysis, design, coding, testing, and deployment, ensuring robust and scalable solutions. With a focus on agile methodologies and user-centered design, they deliver high-quality products that meet market demands and drive business success.</p>
+        <span id="title" class="font-clash font-medium text-xl md:text-2xl">Product Development</span>
+          <p id="info" class="font-thin md:text-sm font-merriweather leading-loose pt-3">The IT company provides comprehensive product development services, guiding clients from concept to launch. Their expertise spans requirements analysis, design, coding, testing, and deployment, ensuring robust and scalable solutions. With a focus on agile methodologies and user-centered design, they deliver high-quality products that meet market demands and drive business success.</p>
           <button class="h-16 w-40 mt-4 border border-black rounded-full bg-transparent text-black font-clash font-medium text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
       </div>
         <div id="part2" class="w-1/4" data-aos="fade-up" data-aos-duration="1000">
-          <img id="service-img" src ="./assets/gamingLarge.png" data-aos="fade-up">
+          <img id="service-front-img" src ="./assets/gamingLarge.png" data-aos="fade-up">
         </div>
         <div id="part3" class="w-1/5">
           <div class="tele-med flex">
             <div data-aos="fade-up-left" data-aos-duration="1000">
-              <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Product Development</span>
+              <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Product Development</span>
                   <p class="font-thin md:text-sm font-merriweather block">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
               </div>
           </div>
           <div class="flex flex-col justify-center text-black">
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">E-commerce Solutions</span>
+            <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">E-commerce Solutions</span>
               <p class="hidden font-thin font-merriweather">Our cutting-edge e-commerce solutions are revolutionizing online retail. Leveraging advanced technologies such as AI, machine learning, and data analytics, we enable dynamic product recommendations, streamlined inventory management, and seamless integration with various sales channels, empowering businesses to thrive in the digital marketplace.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
           </div>
@@ -173,24 +173,24 @@
 
           <div class="flex">
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Mobile App Development</span>
+            <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Mobile App Development</span>
             
               <p class="hidden font-thin font-merriweather">Unlock the Power of Mobile Apps. We are your go-to partner for mobile application design and development. With our expertise and passion for crafting exceptional mobile experiences, we transform your ideas into intuitive and engaging applications that captivate users and drive business growth. Get ready to make your mark in the mobile world with DigiMoksha.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
-              <img class="hidden design-service-img" src="./assets/service_mobile_dev.png" alt="mobile development">
+              <img class="hidden service-img" src="./assets/service_mobile_dev.png" alt="mobile development">
           </div>
           </div>
           <div class="flex">
             <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
-              <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">Cloud</span>
+              <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Cloud</span>
                 <p class="hidden font-thin font-merriweather">We specializes in delivering cutting-edge cloud services that drive digital transformation. Leveraging robust infrastructure, advanced security protocols, and scalable solutions, they enable organizations to optimize performance, enhance agility, and reduce operational costs. We empower businesses to innovate, scale, and stay relevent.</p>
                 <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
-                <img class="hidden design-service-img" src="./assets/service_cloud.png" alt="cloud">
+                <img class="hidden service-img" src="./assets/service_cloud.png" alt="cloud">
             </div>
             </div>
           <div class="flex">
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-clash font-medium cursor-pointer text-lg lg:text-xl">AI/ML</span>
+            <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">AI/ML</span>
               <p class="hidden font-thin font-merriweather">Harnesses the power of artificial intelligence and machine learning to deliver cutting-edge solutions. Our AI/ML capabilities empower businesses to enhance decision-making, optimize operations, and unlock new opportunities. From predictive analytics and natural language processing to computer vision and recommendation systems, we leverages AI/ML to drive innovation and drive sustainable growth in a rapidly evolving digital landscape.</p>
               <p class="font-thin md:text-sm font-merriweather overflow-ellipsis">Thfringilla imperdiet dolor hendrerit nec.</p>
               <!-- <p class="md:w-[18%] font-thin font-merriweather truncate overflow-hidden overflow-ellipsis">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p> -->
@@ -294,6 +294,7 @@ let menuButton = document.querySelector("#menu-button")
             const el= document.querySelector("#part3")
     const title = document.querySelector('#title');
     const info = document.querySelector('#info');
+    const serviceFrontImage = document.querySelector('#service-front-img');
     const service = document.querySelector('#service');
     const t = document.querySelectorAll('.service');
     let preiviouslyClickedBlock = null
@@ -316,6 +317,9 @@ let menuButton = document.querySelector("#menu-button")
             previouslyClickedServiceTitle = event.target
              title.textContent = event.target.textContent
              info.textContent = event.target.nextElementSibling.textContent
+             let image = event.target.parentElement.querySelector('.service-img')
+             let imgSource = image.getAttribute('src')
+             serviceFrontImage.src =  imgSource
         }else if (event.target.parentElement.classList.contains('title-info')) {
             title.textContent = event.target.parentElement.textContent;
             info.textContent = event.target.nextElementSibling?event.target.nextElementSibling.textContent:'';
