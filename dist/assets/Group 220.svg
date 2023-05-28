@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="331" height="236.109" viewBox="0 0 331 236.109">
+  <g id="Group_220" data-name="Group 220" transform="translate(-333 -3535.643)">
+    <path id="Path_223" data-name="Path 223" d="M59.023,470.959a73.744,73.744,0,0,0,39.343,50.323c20.577,10.443,45.151,11.89,67.427,5.869,27.4-7.4,51.366-25.381,79.29-30.44,19.448-3.523,40.68-.795,57.928-10.446,9.691-5.422,16.992-14.217,23.645-23.107,4.658-6.22,9.163-12.672,11.96-19.921,7.57-19.625,1.3-42.467-11.045-59.495-9.531-13.142-22.266-23.459-35.454-32.731-11.231-7.9-16.864-19.658-27.326-28.744-22.015-19.118-51.488-28.591-80.484-27.61-38.244,1.292-66.8,20.5-93.766,45.663-9.987,9.32-15.206,25.517-19.694,38.027-9.722,27.1-16.759,55.977-13.226,84.554Q58.129,467.007,59.023,470.959Z" transform="translate(295.097 3241.055)" fill="#9fcc3b" opacity="0.2"/>
+    <text id="Single_payment" data-name="Single payment" transform="translate(500 3716)" fill="#003e7b" font-size="32" font-family="Merriweather-Bold, Merriweather" font-weight="700"><tspan x="-125" y="0">Single Payment</tspan></text>
+    <text id="Rs.12_000" data-name="Rs.12,000" transform="translate(333 3650)" font-size="64" font-family="ClashDisplay-Bold, Clash Display" font-weight="700"><tspan x="0" y="0">Rs.12,000</tspan></text>
+  </g>
+</svg>

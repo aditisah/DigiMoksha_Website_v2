@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap');
+  @import '@fortawesome/fontawesome-free/css/all.css';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Schadow BT Roman';
+    src: url('../fonts/schadow-bt-3.woff2') format('woff2'),
+         url('../fonts/schadow-bt-3.woff') format('woff');
+    font-weight: roman;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sombra Variable DEMO';
+    src: url('../fonts/Sombra-Variable-Demo/Sombra-Variable-Demo.woff') format('woff');
+    /* Add additional src declarations here for other font formats */
+    font-weight: normal;
+    font-style: normal;
+  }
+   
+
+  .font-schadow {
+    font-family: 'Schadow BT';
+  }
+  .font-merriweather {
+    font-family: 'Merriweather', serif;
+  }
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-ibm-plex-serif {
+    font-family: 'IBM Plex Serif', serif;
+  }
+  .font-sombra {
+    font-family: 'Sombra', sans-serif;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  @keyframes slide-in-from-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-left {
+    animation: slide-in-from-right 1s ease-in-out forwards;
+  }
+  @keyframes slide-in-from-left {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  .animate-slide-right {
+    animation: slide-in-from-left 1s ease-in-out forwards;
+    
+  }
+  
+  @keyframes img1ZoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+  
+  .img1-zoom-in {
+    animation: img1ZoomIn 1s;
+  }
+ 
+  @keyframes img1ZoomOut {
+    from {
+      transform: scale(2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .img1-zoom-out {
+    animation: img1ZoomOut 1s;
+  }
+  @keyframes img2ZoomIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .img2-zoom-in {
+    animation: img2ZoomIn 1s;
+  }
+ 
+  @keyframes img2ZoomOut {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.5);
+    }
+  }
+  
+  .img2-zoom-out {
+    animation: img2ZoomOut 1s;
+  }
+  
+  .font-clash {
+    font-family: 'Clash Display', sans-serif;
+  }
+  
+  .logo {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .logo:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .wavy-section {
+    position: relative;
+    background-color: #f1f1f1; /* Replace with your desired background color */
+    padding: 20px;
+  }
+  
+  .wavy-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-45deg, transparent 16px, #f1f1f1 0), linear-gradient(45deg, transparent 16px, #f1f1f1 0);
+    background-size: 32px 32px;
+    pointer-events: none;
+  }
+
+  
+    .white-bullet::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 8px;
+    }
+  
+    
+  
+
+  
+  
