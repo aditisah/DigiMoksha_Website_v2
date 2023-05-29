@@ -141,23 +141,8 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .wavy-section {
-    position: relative;
-    background-color: #f1f1f1; /* Replace with your desired background color */
-    padding: 20px;
-  }
   
-  .wavy-section:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(-45deg, transparent 16px, #f1f1f1 0), linear-gradient(45deg, transparent 16px, #f1f1f1 0);
-    background-size: 32px 32px;
-    pointer-events: none;
-  }
+  
 
   
     .white-bullet::before {
@@ -169,6 +154,38 @@
       background-color: white;
       margin-right: 8px;
     }
+
+  
+
+.slider-container {
+  transition: transform 0.3s ease;
+}
+
+.slider-slide {
+  flex: 0 0 100%;
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-prev,
+.slider-next {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+
+
   
     
   

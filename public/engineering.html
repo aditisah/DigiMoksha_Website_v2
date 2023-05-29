@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
@@ -146,27 +146,53 @@
       class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
     <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-10 text-white font-bold font-clash">Engineering Services</h1></div>
-    <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
+    <div class=" absolute flex flex-wrap mx-5 lg:mx-[250px] md:w-full md:h-full md:py-[70px]">
+      <!-- mobile screen -->
+      <div class="slider md:hidden relative overflow-hidden">
+        <div class="slider-container relative flex">
+          <!-- Content for smaller screens -->
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36" src="./assets/services-ux-design.png" alt="Image 1">
+          </div>
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36" src="./assets/services-service-design.png" alt="Image 1">
+          </div>
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36" src="./assets/services-workshop.png" alt="Image 2">
+          </div>
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36" src="./assets/services-advisory.png" alt="Image 3">
+          </div>
+        </div>
 
-      <div id="part1" class="w-1/5" data-aos="fade-right" data-aos-duration="1000">
-        <span id="title" class="font-clash font-medium text-xl md:text-2xl">Product Development</span>
-          <p id="info" class="font-thin md:text-sm font-merriweather leading-loose pt-3">The IT company provides comprehensive product development services, guiding clients from concept to launch. Their expertise spans requirements analysis, design, coding, testing, and deployment, ensuring robust and scalable solutions. With a focus on agile methodologies and user-centered design, they deliver high-quality products that meet market demands and drive business success.</p>
-          <button class="h-16 w-40 mt-4 border border-black rounded-full bg-transparent text-black font-clash font-medium text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
+        <div class="slider-navigation md:hidden"> <!-- Hidden on mobile screens -->
+          <!-- HTML structure for larger screens -->
+          <svg class="slider-prev z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+          <svg class="slider-next z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+          <!-- <button class="slider-next bg-red-400" onclick="nextSlide()">&#8594;</button> -->
+        </div>
+        </div>
+      
+      <!-- <larger screens -->
+      <div id="part1" class="w-full md:w-1/5 mt-8 md:mt-0" data-aos="fade-right" data-aos-duration="1000">
+        <span id="title" class="font-clash font-semibold md:font-medium text-2xl">Product Development</span>
+          <p id="info" class="font-thin text-sm font-merriweather leading-loose md:leading-relaxed pt-3">The IT company provides comprehensive product development services, guiding clients from concept to launch. Their expertise spans requirements analysis, design, coding, testing, and deployment, ensuring robust and scalable solutions. With a focus on agile methodologies and user-centered design, they deliver high-quality products that meet market demands and drive business success.</p>
+          <button class="h-12 w-36 md:h-16 md:w-40 mt-4 border-0 md:border border-black rounded-full bg-[#317FEB] md:bg-transparent text-white md:text-black font-clash font-medium text-base tracking-widest md:text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
       </div>
-        <div id="part2" class="w-1/4" data-aos="fade-up" data-aos-duration="1000">
+        <div id="part2" class="hidden md:block w-1/4" data-aos="fade-up" data-aos-duration="1000">
           <img id="service-front-img" src ="/assets/gamingLarge.png" data-aos="fade-up">
         </div>
-        <div id="part3" class="w-1/5">
+        <div id="part3" class="hidden md:block w-1/5">
           <div class="tele-med flex">
             <div data-aos="fade-up-left" data-aos-duration="1000">
               <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Product Development</span>
-                  <p class="font-thin md:text-sm font-merriweather block">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+                  <p class="hidden service-detail font-thin md:text-sm font-merriweather md:block">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
               </div>
           </div>
           <div class="flex flex-col justify-center text-black">
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">E-commerce Solutions</span>
-              <p class="hidden font-thin font-merriweather">Our cutting-edge e-commerce solutions are revolutionizing online retail. Leveraging advanced technologies such as AI, machine learning, and data analytics, we enable dynamic product recommendations, streamlined inventory management, and seamless integration with various sales channels, empowering businesses to thrive in the digital marketplace.</p>
+              <p class="hidden service-detail font-thin font-merriweather">Our cutting-edge e-commerce solutions are revolutionizing online retail. Leveraging advanced technologies such as AI, machine learning, and data analytics, we enable dynamic product recommendations, streamlined inventory management, and seamless integration with various sales channels, empowering businesses to thrive in the digital marketplace.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
           </div>
           </div>
@@ -175,7 +201,7 @@
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Mobile App Development</span>
             
-              <p class="hidden font-thin font-merriweather">Unlock the Power of Mobile Apps. We are your go-to partner for mobile application design and development. With our expertise and passion for crafting exceptional mobile experiences, we transform your ideas into intuitive and engaging applications that captivate users and drive business growth. Get ready to make your mark in the mobile world with DigiMoksha.</p>
+              <p class="hidden service-detail font-thin font-merriweather">Unlock the Power of Mobile Apps. We are your go-to partner for mobile application design and development. With our expertise and passion for crafting exceptional mobile experiences, we transform your ideas into intuitive and engaging applications that captivate users and drive business growth. Get ready to make your mark in the mobile world with DigiMoksha.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
               <img class="hidden service-img" src="/assets/service_mobile_dev.png" alt="mobile development">
           </div>
@@ -183,7 +209,7 @@
           <div class="flex">
             <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
               <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Cloud</span>
-                <p class="hidden font-thin font-merriweather">We specializes in delivering cutting-edge cloud services that drive digital transformation. Leveraging robust infrastructure, advanced security protocols, and scalable solutions, they enable organizations to optimize performance, enhance agility, and reduce operational costs. We empower businesses to innovate, scale, and stay relevent.</p>
+                <p class="hidden service-detail font-thin font-merriweather">We specializes in delivering cutting-edge cloud services that drive digital transformation. Leveraging robust infrastructure, advanced security protocols, and scalable solutions, they enable organizations to optimize performance, enhance agility, and reduce operational costs. We empower businesses to innovate, scale, and stay relevent.</p>
                 <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
                 <img class="hidden service-img" src="/assets/service_cloud.png" alt="cloud">
             </div>
@@ -191,7 +217,7 @@
           <div class="flex">
           <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
             <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">AI/ML</span>
-              <p class="hidden font-thin font-merriweather">Harnesses the power of artificial intelligence and machine learning to deliver cutting-edge solutions. Our AI/ML capabilities empower businesses to enhance decision-making, optimize operations, and unlock new opportunities. From predictive analytics and natural language processing to computer vision and recommendation systems, we leverages AI/ML to drive innovation and drive sustainable growth in a rapidly evolving digital landscape.</p>
+              <p class="hidden service-detail font-thin font-merriweather">Harnesses the power of artificial intelligence and machine learning to deliver cutting-edge solutions. Our AI/ML capabilities empower businesses to enhance decision-making, optimize operations, and unlock new opportunities. From predictive analytics and natural language processing to computer vision and recommendation systems, we leverages AI/ML to drive innovation and drive sustainable growth in a rapidly evolving digital landscape.</p>
               <p class="font-thin md:text-sm font-merriweather overflow-ellipsis">Thfringilla imperdiet dolor hendrerit nec.</p>
               <!-- <p class="md:w-[18%] font-thin font-merriweather truncate overflow-hidden overflow-ellipsis">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p> -->
           </div>
@@ -326,6 +352,48 @@ let menuButton = document.querySelector("#menu-button")
           }
         
     })
+
+    const slider = document.querySelector('.slider');
+const sliderContainer = document.querySelector('.slider-container');
+const slides = document.querySelectorAll('.slider-slide');
+const slideWidth = slides[0].clientWidth;
+
+let slideIndex = 0;
+
+function updateSliderPosition() {
+   sliderContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+  // slides.forEach((slide, index) => {
+  //   if (index === slideIndex) {
+  //     slide.style.display = "block"; // Display the current slide image
+  //   } else {
+  //     slide.style.display = "none"; // Hide the other slide images
+  //   }
+  // });
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  updateSliderPosition();
+}
+
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  updateSliderPosition();
+}
+
+let serviceDetail = document.querySelectorAll('.service-detail')
+let serviceTitle = document.querySelectorAll('.title-info')
+document.querySelector('.slider-prev').addEventListener('click', ()=>{
+  prevSlide()
+console.log(serviceDetail[slideIndex])
+title.textContent = serviceTitle[slideIndex].textContent
+info.textContent = serviceDetail[slideIndex].textContent
+});
+document.querySelector('.slider-next').addEventListener('click', ()=>{
+  nextSlide()
+  title.textContent = serviceTitle[slideIndex].textContent
+info.textContent = serviceDetail[slideIndex].textContent
+} );
 
     window.addEventListener("scroll", function() {
     if (preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!== null) {
