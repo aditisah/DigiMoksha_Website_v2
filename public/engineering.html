@@ -17,30 +17,30 @@
 </head>
 <body class="bg-[#F5F5F5]">
   <div class="relative">
-    <div class="absolute left-0 right-0 bottom-[800px] -top-[1100px] md:bottom-[1100px] md:-top-[800px] bg-[url('/assets/engineering_bg.svg')] bg-center bg-no-repeat bg-[length:700px_1550px] md:bg-[length:1640px_1550px] 2xl:bg-[length:2170px_1700px]">
+    <div class="absolute left-0 right-0 bottom-[800px] -top-[1100px] md:bottom-[1100px] md:-top-[800px] bg-[url('./assets/engineering_bg.svg')] bg-center bg-no-repeat bg-[length:700px_1550px] md:bg-[length:1640px_1550px] 2xl:bg-[length:2170px_1700px]">
       <div class="md:h-[800px]"></div>
     </div>
     <!-- header -->
     <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[250px] bg-white-500">
         <div class="relative h-10 w-28">
-          <a href="/index.html"><img src="/assets/logo_hd.png" alt="logo"/></a>
+          <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
         </div>
         <nav class="menu flex items-center justify-end">
           <div id="menu-button" class="absolute cursor-pointer top-[46px]">
             <div class="h-[2px] w-9 bg-black ml-14"></div>
-            <p class="active-page my-2 text-right font-inter font-light"><a href="/engineering.html">Engineering</a></p>
+            <p class="active-page my-2 text-right font-inter font-light"><a href="./engineering.html">Engineering</a></p>
             <div class="h-[2px] w-9 bg-black mt-2 ml-14"></div>
         </div>
           <div id="menu-items" class="hidden absolute top-[46px] justify-end z-20">
             <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-inter font-light">
-                            <li class="mt-2"><a href="/index.html">Home</a></li>
-                        <li><a href="/about-us.html">About us</a></li>
-                        <li><a href="/engineering.html">Engineering</a></li>
-                        <li><a href="/design.html">Design</a></li>
-                        <li><a href="/academy.html">Academy</a></li>
-                        <li><a href="/portfolio.html">Portfolio</a></li>
-                        <li class="mb-2"><a href="/contact.html">Contact</a></li>
+                            <li class="mt-2"><a href="./index.html">Home</a></li>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="./engineering.html">Engineering</a></li>
+                        <li><a href="./design.html">Design</a></li>
+                        <li><a href="./academy.html">Academy</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="./contact.html">Contact</a></li>
                         </ul>
                         <div class="h-[2px] w-9 top-[1700px] ml-[52px] bg-black"></div>
           </div>
@@ -56,8 +56,8 @@
                 <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100"> -->
                     <div class="relative flex flex-wrap w-full h-[550px] md:h-[620px]">
                       <div id="image" class="relative w-full md:w-1/2 h-[60%] md:h-full">
-                          <img class="absolute md:left-28 md:top-4 img1-zoom-out" src="/assets/engineering-image-back.svg" alt="background_img">
-                          <img class="absolute md:left-28 md:top-4 img2-zoom-in" src="/assets/engineering-image.png" alt="puzzle">
+                          <img class="absolute md:left-28 md:top-4 img1-zoom-out" src="./assets/engineering-image-back.svg" alt="background_img">
+                          <img class="absolute md:left-28 md:top-4 img2-zoom-in" src="./assets/engineering-image.png" alt="puzzle">
                       </div>
                         <div class="text w-full md:w-1/2 h-[15%] md:h-full">
                             <div class="h-full md:mt-32 2xl:mt-64 animate-slide-left md:ml-32">
@@ -143,24 +143,32 @@
         </div>
             <!-- Section3 -->
       <section
-      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[700px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
     <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-10 text-white font-bold font-clash">Engineering Services</h1></div>
     <div class=" absolute flex flex-wrap mx-5 lg:mx-[250px] md:w-full md:h-full md:py-[70px]">
       <!-- mobile screen -->
       <div class="slider md:hidden relative overflow-hidden">
         <div class="slider-container relative flex">
+          
           <!-- Content for smaller screens -->
+          <div>
+            <img class="fixed mx-auto h-36 w-36" src="./assets/service-bg.svg" alt="Image 1">
+          </div>
           <div class="slider-slide">
+            <img class="fixed mx-auto h-36 w-36" src="./assets/service-bg.svg" alt="Image 1">
             <img class="mx-auto h-36 w-36" src="./assets/services-ux-design.png" alt="Image 1">
           </div>
           <div class="slider-slide">
+            <img class="fixed mx-auto h-36 w-36" src="./assets/service-bg.svg" alt="Image 1">
             <img class="mx-auto h-36 w-36" src="./assets/services-service-design.png" alt="Image 1">
           </div>
           <div class="slider-slide">
+            <img class="fixed mx-auto h-36 w-36" src="./assets/service-bg.svg" alt="Image 1">
             <img class="mx-auto h-36 w-36" src="./assets/services-workshop.png" alt="Image 2">
           </div>
           <div class="slider-slide">
+            <img class="absolute -left-1 mx-auto h-40 w-44" src="./assets/service-bg.svg" alt="Image 1">
             <img class="mx-auto h-36 w-36" src="./assets/services-advisory.png" alt="Image 3">
           </div>
         </div>
@@ -179,14 +187,16 @@
           <p id="info" class="font-thin text-sm font-merriweather leading-loose md:leading-relaxed pt-3">The IT company provides comprehensive product development services, guiding clients from concept to launch. Their expertise spans requirements analysis, design, coding, testing, and deployment, ensuring robust and scalable solutions. With a focus on agile methodologies and user-centered design, they deliver high-quality products that meet market demands and drive business success.</p>
           <button class="h-12 w-36 md:h-16 md:w-40 mt-4 border-0 md:border border-black rounded-full bg-[#317FEB] md:bg-transparent text-white md:text-black font-clash font-medium text-base tracking-widest md:text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
       </div>
-        <div id="part2" class="hidden md:block w-1/4" data-aos="fade-up" data-aos-duration="1000">
-          <img id="service-front-img" src ="/assets/gamingLarge.png" data-aos="fade-up">
+        <div id="part2" class="hidden relative md:block w-1/4" data-aos="fade-up" data-aos-duration="1000">
+          <img class="absolute z-40 top-4 left-12 h-60 w-60" id="service-front-img" src ="./assets/services-product-dev.png" data-aos="fade-up">
+          <img class="absolute h-64 w-64 top-10 left-11 z-0" id="service-back-img" src ="./assets/service-bg.svg" data-aos="fade-up">
         </div>
         <div id="part3" class="hidden md:block w-1/5">
           <div class="tele-med flex">
             <div data-aos="fade-up-left" data-aos-duration="1000">
               <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Product Development</span>
                   <p class="hidden service-detail font-thin md:text-sm font-merriweather md:block">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+                  <img class="hidden service-img absolute z-40 top-4 left-12 h-60 w-60" src="./assets/services-product-dev.png" alt="mobile development">
               </div>
           </div>
           <div class="flex flex-col justify-center text-black">
@@ -194,7 +204,8 @@
             <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">E-commerce Solutions</span>
               <p class="hidden service-detail font-thin font-merriweather">Our cutting-edge e-commerce solutions are revolutionizing online retail. Leveraging advanced technologies such as AI, machine learning, and data analytics, we enable dynamic product recommendations, streamlined inventory management, and seamless integration with various sales channels, empowering businesses to thrive in the digital marketplace.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
-          </div>
+              <img class="hidden service-img z-40 top-4 left-[67px] h-60 w-52" src="./assets/services-ecom.png" alt="ecommerce">
+            </div>
           </div>
 
           <div class="flex">
@@ -203,7 +214,7 @@
             
               <p class="hidden service-detail font-thin font-merriweather">Unlock the Power of Mobile Apps. We are your go-to partner for mobile application design and development. With our expertise and passion for crafting exceptional mobile experiences, we transform your ideas into intuitive and engaging applications that captivate users and drive business growth. Get ready to make your mark in the mobile world with DigiMoksha.</p>
               <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
-              <img class="hidden service-img" src="/assets/service_mobile_dev.png" alt="mobile development">
+              <img class="hidden service-img z-40 top-4 left-[67px] h-64 w-52" src="./assets/services-mobile-dev.png" alt="mobile development">
           </div>
           </div>
           <div class="flex">
@@ -211,7 +222,7 @@
               <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">Cloud</span>
                 <p class="hidden service-detail font-thin font-merriweather">We specializes in delivering cutting-edge cloud services that drive digital transformation. Leveraging robust infrastructure, advanced security protocols, and scalable solutions, they enable organizations to optimize performance, enhance agility, and reduce operational costs. We empower businesses to innovate, scale, and stay relevent.</p>
                 <p class="font-thin md:text-sm font-merriweather">Thfringilla imperdiet dolor hendrerit nec.</p>
-                <img class="hidden service-img" src="/assets/service_cloud.png" alt="cloud">
+                <img class="hidden service-img z-40 top-16 left-[67px] h-52 w-52" src="./assets/services-cloud.png" alt="cloud">
             </div>
             </div>
           <div class="flex">
@@ -219,6 +230,7 @@
             <span class="title-info font-clash font-medium cursor-pointer text-lg md:text-xl">AI/ML</span>
               <p class="hidden service-detail font-thin font-merriweather">Harnesses the power of artificial intelligence and machine learning to deliver cutting-edge solutions. Our AI/ML capabilities empower businesses to enhance decision-making, optimize operations, and unlock new opportunities. From predictive analytics and natural language processing to computer vision and recommendation systems, we leverages AI/ML to drive innovation and drive sustainable growth in a rapidly evolving digital landscape.</p>
               <p class="font-thin md:text-sm font-merriweather overflow-ellipsis">Thfringilla imperdiet dolor hendrerit nec.</p>
+              <img class="hidden service-img z-40 top-16 left-[67px] h-52 w-52" src="./assets/services-ai.png" alt="mobile development">
               <!-- <p class="md:w-[18%] font-thin font-merriweather truncate overflow-hidden overflow-ellipsis">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p> -->
           </div>
           </div>
@@ -275,7 +287,6 @@
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
           <script>AOS.init()
-
 let menuButton = document.querySelector("#menu-button")
             let menuItems = document.querySelector("#menu-items")
             let menu = document.querySelector(".menu")
@@ -345,7 +356,16 @@ let menuButton = document.querySelector("#menu-button")
              info.textContent = event.target.nextElementSibling.textContent
              let image = event.target.parentElement.querySelector('.service-img')
              let imgSource = image.getAttribute('src')
+             const computedStyle = window.getComputedStyle(image)
+             let imgWidth = computedStyle.getPropertyValue('width')
+             let imgHeight = computedStyle.getPropertyValue('height')
+             let imgTop = computedStyle.getPropertyValue('top')
+             let imgLeft = computedStyle.getPropertyValue('left')
              serviceFrontImage.src =  imgSource
+             serviceFrontImage.style.width =  imgWidth
+             serviceFrontImage.style.height =  imgHeight
+             serviceFrontImage.style.top =  imgTop
+             serviceFrontImage.style.left =  imgLeft
         }else if (event.target.parentElement.classList.contains('title-info')) {
             title.textContent = event.target.parentElement.textContent;
             info.textContent = event.target.nextElementSibling?event.target.nextElementSibling.textContent:'';
