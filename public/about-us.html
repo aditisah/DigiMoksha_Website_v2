@@ -221,7 +221,14 @@
   touchstartX = e.touches[0].clientX;
   menuItems.classList.remove("hidden");
   menuButton.classList.add("hidden");
-  menuBackground.classList.remove("hidden")
+  menuItems.style.position = 'absolute'
+  menuItems.style.top = '46px'
+  menuItems.style.left = '50%'
+  menuItems.style.transform = 'translateX(-50%)'
+  menuItems.style.width = 'translateX(-50%)'
+  menuItems.style.transform = 'calc(100vw - 10rem)'
+  menuItems.style.backgroundColor = 'white'
+  menuItems.style.zIndex = '20'
 } else {
   touchstartX = undefined;
   menuItems.classList.add("hidden");
