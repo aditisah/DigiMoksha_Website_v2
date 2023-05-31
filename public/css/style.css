@@ -183,6 +183,13 @@
   cursor: pointer;
   padding: 0.5rem;
 }
+#menu-items:hover {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+}
 
 
 
