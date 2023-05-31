@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
@@ -21,15 +21,15 @@
       <div class="md:h-[800px]"></div>
     </div>
     <!-- header -->
-    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[250px] bg-white-500">
+    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
         <div class="relative h-10 w-28">
           <a href="/index.html"><img src="/assets/logo_hd.png" alt="logo"/></a>
         </div>
         <nav class="menu flex items-center justify-end">
-          <div id="menu-button" class="absolute cursor-pointer">
-            <div class="h-[2px] w-9 bg-black"></div>
-            <p class="hidden active-page mt-2"><a href="/engineering.html">d</a></p>
-            <div class="h-[2px] w-9 bg-black mt-2"></div>
+          <div id="menu-button" class="fixed cursor-pointer top-[46px] z-50">
+            <div class="h-[2px] w-9 bg-black ml-24"></div>
+            <p class="active-page my-2 text-right font-light"><a href="./people-services.html">People Services</a></p>
+            <div class="h-[2px] w-9 bg-black mt-2 ml-24"></div>
         </div>
         <!-- menu white overlay for mobile -->
         <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
@@ -37,7 +37,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
           </button>
         </div>
-          <div id="menu-items" class="hidden absolute top-[46px] justify-end z-50">
+          <div id="menu-items" class="hidden fixed top-[46px] justify-end z-40">
             <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-light">
                           
@@ -151,7 +151,7 @@
         </div>
             <!-- Section3 -->
       <section
-      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1500px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+      class="relative z-50 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1500px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
     <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash font-bold">Design Services</h1></div>
     <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
