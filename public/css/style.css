@@ -183,7 +183,7 @@
   cursor: pointer;
   padding: 0.5rem;
 }
-@media (min-width: 414) {
+@media (max-width: 414) {
 #menu-items:hover {
   position: fixed;
   top: 46px;
