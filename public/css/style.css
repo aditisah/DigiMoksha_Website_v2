@@ -183,17 +183,12 @@
   cursor: pointer;
   padding: 0.5rem;
 }
-@media (max-width: 768px) {
-  #menu-items:hover {
-    position: absolute;
-    top: 46px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100vw - 10rem); /* Adjust the width as per your requirements */
-    background-color: white;
-    z-index: 20; /* Ensure the menu items are on top */
+/* @media (max-width: 768px) {
+  #menu-button:hover ~ #menu-overlay {
+    opacity: 1;
   }
-}
+  
+} */
 
 
 

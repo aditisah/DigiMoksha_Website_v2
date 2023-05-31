@@ -29,7 +29,8 @@
             <p class="active-page mt-2 font-light"><a href="./about-us.html">About us</a></p>
             <div class="h-[2px] w-9 bg-black mt-2 ml-8"></div>
         </div>
-          <div id="menu-items" class="hidden absolute top-[46px] justify-end z-20">
+        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white"></div>
+          <div id="menu-items" class="hidden fixed top-[46px] justify-end z-50">
             <div class="menu-lines h-[2px] w-9 ml-[52px] hover:ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-light">
                             <li class="mt-2"><a href="./index.html">Home</a></li>
@@ -213,7 +214,7 @@
             menuButton.classList.remove("hidden")
           }
         })
-        const menuBackground = document.getElementById('menu-background')
+        const menuBackground = document.getElementById('menu-overlay')
         menuButton.addEventListener("touchstart",(e)=>{
           e.preventDefault()
           if(window.innerWidth<=768){
@@ -221,14 +222,14 @@
   touchstartX = e.touches[0].clientX;
   menuItems.classList.remove("hidden");
   menuButton.classList.add("hidden");
-  menuItems.style.position = 'absolute'
-  menuItems.style.top = '46px'
-  menuItems.style.left = '50%'
-  menuItems.style.transform = 'translateX(-50%)'
-  menuItems.style.width = 'translateX(-50%)'
-  menuItems.style.transform = 'calc(100vw - 10rem)'
-  menuItems.style.backgroundColor = 'white'
-  menuItems.style.zIndex = '20'
+  menuBackground.classList.remove("hidden");
+  // menuItems.style.position = 'absolute'
+  // menuItems.style.top = '46px'
+  // menuItems.style.left = '81.2%'
+  // menuItems.style.transform = 'translateX(-50%)'
+  // menuItems.style.width = 'calc(100vw - 10rem)'
+  // menuItems.style.backgroundColor = 'white'
+  // menuItems.style.zIndex = '20'
 } else {
   touchstartX = undefined;
   menuItems.classList.add("hidden");
