@@ -183,15 +183,19 @@
   cursor: pointer;
   padding: 0.5rem;
 }
-@media (max-width: 414) {
-#menu-items:hover {
-  position: fixed;
-  top: 46px;
-  left: 0;
-  width: 100vw;
-  background-color: white;
+@media (max-width: 768px) {
+  #menu-items:hover {
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw - 10rem); /* Adjust the width as per your requirements */
+    background-color: white;
+    z-index: 20; /* Ensure the menu items are on top */
+  }
 }
-}
+
+
 
 
 
