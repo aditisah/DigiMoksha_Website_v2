@@ -205,55 +205,6 @@
   </div>
   <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
 </section>
-      <script>
-        AOS.init()
-        let menuButton = document.querySelector("#menu-button")
-        let menuItems = document.querySelector("#menu-items")
-        let menu = document.querySelector(".menu")
-        const menuBackground = document.getElementById('menu-overlay')
-        let touchstartX
-        menuButton.addEventListener("mouseover",()=>{
-          if(window.innerWidth>768){
-            menuItems.classList.remove("hidden")
-            menuButton.classList.add("hidden")
-          }
-        })
-        menu.addEventListener("mouseleave",()=>{
-          if(window.innerWidth>768){
-            menuItems.classList.add("hidden")
-            menuButton.classList.remove("hidden")
-          }
-        })
-        menuButton.addEventListener("touchstart",(e)=>{
-          e.preventDefault()
-          if(window.innerWidth<=768){
-            if (touchstartX === undefined) {
-  touchstartX = e.touches[0].clientX;
-  menuItems.classList.remove("hidden");
-  menuButton.classList.add("hidden");
-  menuBackground.classList.remove("hidden");
-} else {
-  touchstartX = undefined;
-  menuItems.classList.add("hidden");
-  menuButton.classList.remove("hidden");
-}
-          }
-        })
-
-          //close menu overlay with items
-          const menuCloseButton = ()=>{
-  menuBackground.classList.add('hidden')
-  menuItems.classList.add('hidden')
-  menuButton.classList.remove('hidden')
- }
-        let activePage = document.querySelector('.active-page')
-            menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-        </script>
+<script src="./js/main.js"></script>
 </body>
 </html>
