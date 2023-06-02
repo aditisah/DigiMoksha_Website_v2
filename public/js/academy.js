@@ -8,9 +8,8 @@ blockSeatBox.addEventListener('mouseover',()=>{
   bookSeatText.classList.remove('hidden')
   if(window.innerWidth<800){
     blockSeatButton.style.width = '300px'
-  bookSeatText.style.right='20px'
   bookSeatText.style.width='220px'
-  bookSeatIcon.style.right = '250px'
+  bookSeatIcon.style.right = '255px'
   bookSeatText.style.zIndex = '5'
   blockSeatButton.style.zIndex = '5'
   }else if(window.innerWidth>=800){
