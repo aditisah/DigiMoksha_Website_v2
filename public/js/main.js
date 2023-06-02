@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
             }
           })
           const menuBackground = document.getElementById('menu-overlay')
-          menuButton.addEventListener("touchstart",(e)=>{
+          menu.addEventListener("touchstart",(e)=>{
             e.preventDefault()
             if(window.innerWidth<=768){
               if (touchstartX === undefined) {
