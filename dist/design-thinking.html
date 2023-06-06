@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    
+    <script src="./js/main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap" rel="stylesheet"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700,900&display=swap" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
     <!-- header -->
-    <header class="flex justify-between items-center px-4 py-3 mx-5 lg:mx-40 bg-white-500">
+    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
         <div class="relative h-10 w-28">
-          <a href="/index.html"><img src="/assets/logo_hd.png" alt="logo"/></a>
+          <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
         </div>
         <nav class="menu flex items-center justify-end">
 
     
-          <div id="menu-button" class="absolute cursor-pointer">
-            <div class="h-[2px] w-9 bg-black"></div>
-            <p class="hidden active-page mt-2"><a href="/engineering.html">d</a></p>
-            <div class="h-[2px] w-9 bg-black mt-2"></div>
+          <div id="menu-button" class="fixed cursor-pointer top-[46px] z-50">
+            <div class="h-[2px] w-9 bg-black ml-24"></div>
+            <p class="active-page my-2 text-right font-light"><a href="./design-thinking.html">Design Thinking</a></p>
+            <div class="h-[2px] w-9 bg-black mt-2 ml-24"></div>
         </div>
-          <div id="menu-items" class="hidden absolute top-[26px] justify-end z-20">
-            <div class="h-[2px] w-9 lg:ml-[52px] bg-black"></div>
+        <!-- menu white overlay for mobile -->
+        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
+          <button id="menu-close-button" class="absolute top-10 left-4 p-2 rounded-full bg-gray-200 text-white" onClick = 'menuCloseButton()'>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+          </button>
+        </div>
+          <div id="menu-items" class="hidden fixed top-[46px] justify-end z-50">
+            <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-light">
-                          <li class="mt-2"><a href="/index.html">Home</a></li>
-                          <li><a href="/about-us.html">About us</a></li>
-                          <li><a href="/engineering.html">Engineering</a></li>
-                          <li><a href="/design.html">Design</a></li>
-                          <li><a href="/academy.html">Academy</a></li>
-                          <li><a href="/portfolio.html">Portfolio</a></li>
-                          <li class="mb-2"><a href="/contact.html">Contact</a></li>
+                          <li class="mt-2"><a href="./index.html">Home</a></li>
+                          <li><a href="./about-us.html">About us</a></li>
+                          <li><a href="./engineering.html">Engineering</a></li>
+                          <li><a href="./design.html">Design</a></li>
+                          <li><a href="./academy.html">Academy</a></li>
+                          <li><a href="./portfolio.html">Portfolio</a></li>
+                          <li class="mb-2"><a href="./contact.html">Contact</a></li>
                         </ul>
-                        <div class="h-[2px] w-9 top-[1700px] lg:ml-[52px] bg-black"></div>
+                        <div class="h-[2px] w-9 top-[1700px] ml-[52px] bg-black"></div>
           </div>
         </nav>
       </header>
@@ -54,8 +60,8 @@
                   <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100"> -->
                       <div class="relative flex flex-wrap w-full h-[620px]">
                         <div id="image" class=" relative w-full md:w-[50%] h-2/3 lg:h-full">
-                            <img class="absolute" src="/assets/shape 2.png" alt="background_img" data-aos="zoom-out" data-aos-duration="1200">
-                            <img class="absolute" src="/assets/andrew 2.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1200">
+                            <img class="absolute" src="./assets/shape 2.png" alt="background_img" data-aos="zoom-out" data-aos-duration="1200">
+                            <img class="absolute" src="./assets/andrew 2.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1200">
                         </div>
                         <div class="text w-full md:w-1/2 h-1/3 lg:h-full">
                             <div class="h-1/3 mt-7 md:mt-56 xl:mt-56 w-full md:w-[640px]" data-aos="fade-left" data-aos-duration="1200">
@@ -139,7 +145,7 @@
 
             <!-- Section3 -->
       <section
-      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full h-[2300px] md:h-[1650px] lg:h-[1500px]  mx-5 lg:mx-[300px] overflow-hidden overflow-x-hidden"
+      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full h-[2300px] md:h-[1680px] lg:h-[1750px]  mx-5 lg:mx-[300px] overflow-hidden overflow-x-hidden"
     >
     <div class="w-full">
         <h1 class="text-3xl lg:text-5xl py-4 md:py-12 text-[#9FCC3B] font-semibold font-clash">Drive Growth and Impact your Organization</h1>
@@ -168,40 +174,40 @@
         <div id="icons" class="flex flex-wrap justify-around w-full lg:h-1/2 mt-6">
             <div class="w-44">
                 <div class="relative w-20 h-16 mx-auto">
-                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/understanding_img.png">
-                    <img class="absolute top-4 z-20" src="/assets/understanding_background.png">
+                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="./assets/understanding_img.png">
+                    <img class="absolute top-4 z-20" src="./assets/understanding_background.png">
                 </div>
                 <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Understanding</p></div>
                 <div><p class="font-montserrat text-center">Develop a deep understanding of the user and the business</p></div>
             </div>
             <div class="w-36 md:mt-28">
                 <div class="relative w-20 h-16 mx-auto">
-                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/define_img_HD.png">
-                    <img class="absolute top-4 z-20" src="/assets/define_background.png">
+                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="./assets/define_img_HD.png">
+                    <img class="absolute top-4 z-20" src="./assets/define_background.png">
                 </div>
                 <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Define</p></div>
                 <div><p class="font-montserrat text-center">Develop a deep understanding of the user and the business</p></div>
             </div>
             <div class="w-36">
                 <div class="relative w-20 h-16 mx-auto">
-                    <img class="absolute top-1 left-3 w-14 h-11 z-50" src="/assets/ideate_img_HD.png">
-                    <img class="absolute h-[90%] top-4 z-20" src="/assets/ideate_background_HD.png">
+                    <img class="absolute top-1 left-3 w-14 h-11 z-50" src="./assets/ideate_img_HD.png">
+                    <img class="absolute h-[90%] top-4 z-20" src="./assets/ideate_background_HD.png">
                 </div>
                 <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Ideate</p></div>
                 <div><p class="font-montserrat text-center">Brainstorm potential solutions</p></div>
             </div>
             <div class="w-36 md:mt-28">
                 <div class="relative w-20 h-16 mx-auto">
-                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/prototype_img_HD.png">
-                    <img class="absolute top-4 z-20" src="/assets/prototype_background.png">
+                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="./assets/prototype_img_HD.png">
+                    <img class="absolute top-4 z-20" src="./assets/prototype_background.png">
                 </div>
                 <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Prototype</p></div>
                 <div><p class="font-montserrat text-center">Design prototypes to test the solutions</p></div>
         </div>
             <div class="w-36">
                 <div class="relative w-20 h-16 mx-auto">
-                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/refine_img_HD.png">
-                    <img class="absolute top-4 z-20" src="/assets/refine_background.png">
+                    <img class="absolute top-1 left-4 w-14 h-11 z-50" src="./assets/refine_img_HD.png">
+                    <img class="absolute top-4 z-20" src="./assets/refine_background.png">
                 </div>
                 <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Refine</p></div>
                 <div class="font-montserrat text-center"><p>Continuous short cycle innovation process to keep improving the design.</p></div>
@@ -265,48 +271,6 @@
     </div>
     <div class="h-[10%] md:h-[20%] lg:h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
-          <script>AOS.init()</script>
-          <script>
-            let menuButton = document.querySelector("#menu-button")
-            let menuItems = document.querySelector("#menu-items")
-            let menu = document.querySelector(".menu")
-            let touchstartX
-            menuButton.addEventListener("mouseover",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.remove("hidden")
-                menuButton.classList.add("hidden")
-              }
-            })
-            menu.addEventListener("mouseleave",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.add("hidden")
-                menuButton.classList.remove("hidden")
-              }
-            })
-            menuButton.addEventListener("touchstart",(e)=>{
-              e.preventDefault()
-              if(window.innerWidth<=768){
-                if (touchstartX === undefined) {
-      touchstartX = e.touches[0].clientX;
-      menuItems.classList.remove("hidden");
-      menuButton.classList.add("hidden");
-    } else {
-      touchstartX = undefined;
-      menuItems.classList.add("hidden");
-      menuButton.classList.remove("hidden");
-    }
-              }
-            })
-
-            let activePage = document.querySelector('.active-page')
-            menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-            </script>
            <style>
              li::marker {
     color: #9FCC3B;

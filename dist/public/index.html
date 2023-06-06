@@ -8,27 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,700,900&display=swap" rel="stylesheet"/>
     <title>Document</title>
+  <script type="module" crossorigin src="/assets/index-7eb881f0.js"></script>
   <link rel="stylesheet" href="/assets/index-01efb936.css">
 </head>
-<body>
-  <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[250px] bg-white-500">
+<body class="bg-[#F5F5F5]">
+  <div class="relative">
+  <div class="absolute left-0 right-0 bottom-[410px] -top-[120px] bg-[url('./assets/background.png')] bg-center bg-no-repeat bg-[length:700px_750px] md:bg-[length:1700px_1650px] 2xl:bg-[length:2170px_1700px]">
+    <div class="md:h-[800px]"></div>
+  </div>
+  <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
     <div class="relative h-10 w-28">
       <a href="./index.html"><img src="/assets/logo_hd-5c7674a9.png" alt="logo"/></a>
     </div>
     <div class="menu flex items-center justify-end">
 
-      <div id="menu-button" class="absolute cursor-pointer top-[46px]">
+      <div id="menu-button" class="fixed cursor-pointer top-[46px] z-50">
         <div class="h-[2px] w-9 bg-black ml-7"></div>
         <p class="active-page mt-2 text-right font-light"><a href="./index.html">Home</a></p>
         <div class="h-[2px] w-9 bg-black mt-2 ml-7"></div>
     </div>
-      <div id="menu-items" class="hidden absolute top-[46px] justify-end z-20">
+    <!-- menu white overlay for mobile -->
+    <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
+      <button id="menu-close-button" class="absolute top-10 left-4 p-2 rounded-full bg-gray-200 text-white" onClick = 'menuCloseButton()'>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+      </button>
+    </div>
+      <div id="menu-items" class="hidden fixed top-[46px] justify-end z-50">
         <div class="h-[2px] w-9 ml-[60px] lg:ml-[52px] bg-black"></div>
                     <ul class="text-black text-right font-light">
                         <li class="mt-2"><a href="./index.html">Home</a></li>
@@ -69,7 +81,7 @@
             
         </header>  -->
         <!-- Section1 -->
-        <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[690px] lg:h-[760px] overflow-hidden overflow-x-hidden">
+        <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[690px] md:h-[550px] lg:h-[760px] overflow-hidden overflow-x-hidden">
             <div class="relative h-[300px] lg:h-[600px]">
               <div class="lg:w-full flex flex-wrap items-center justify-center">
                 <div class="w-full h-full mx-auto">
@@ -80,10 +92,10 @@
                             <div class="relative w-full md:w-1/2 h-2/3 lg:h-full">
                                 <!-- <img src="/assets/puzzle.png" alt="puzzle"> -->
                                 <img class="img1 absolute img1-zoom-out z-0" src="/assets/shape 2-e6a13500.png" alt="background_img">
-                            <img class="img2 absolute img2-zoom-in z-10" src="/assets/andrew 2.png" alt="puzzle">
+                            <img class="img2 absolute img2-zoom-in z-10" src="/assets/andrew 2-a10d2748.png" alt="puzzle">
                             </div>
-                            <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                                <div class="h-1/3 mt-7 md:mt-40 lg:mt-52 w-full lg:w-[540px] animate-slide-left overflow-wrap">
+                            <div class="text w-full md:w-1/2 h-1/3 lg:h-full">
+                                <div class="h-1/3 mt-7 md:mt-32 lg:mt-52 w-full lg:w-[540px] animate-slide-left overflow-wrap">
                                     <p class="font-light text-center lg:text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Using Design to solve complex business problems
                                     </p>
@@ -94,11 +106,11 @@
                       <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
                         <div class="relative flex flex-wrap w-full h-[500px]">
                             <div class="relative w-full md:w-1/2 h-2/3 lg:h-full">
-                              <img class="img1 absolute z-0" src="/assets/shape 2.png" alt="background_img">
-                              <img class="img2 absolute z-10" src="/assets/andrew 2.png" alt="puzzle">
+                              <img class="img1 absolute z-0" src="/assets/shape 2-e6a13500.png" alt="background_img">
+                              <img class="img2 absolute z-10" src="/assets/andrew 2-a10d2748.png" alt="puzzle">
                             </div>
-                            <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                                <div class="lg:h-1/3 mt-7 md:mt-40 lg:mt-52 lg:w-[540px] overflow-wrap">
+                            <div class="text w-full md:w-1/2 h-1/3 lg:h-full">
+                                <div class="lg:h-1/3 mt-7 md:mt-32 lg:mt-52 lg:w-[540px] overflow-wrap">
                                     <p class="font-light text-center lg:text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Filling up the empty chairs in your office
                                     </p>
@@ -112,8 +124,8 @@
                               <img class="img1 absolute z-0" src="/assets/shape 2-e6a13500.png" alt="background_img">
                               <img class="img2 absolute z-10" src="/assets/andrew 2-a10d2748.png" alt="puzzle">
                             </div>
-                            <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                                <div class="h-1/3 mt-7 md:mt-40 lg:mt-52 lg:w-[540px] overflow-wrap">
+                            <div class="text w-full md:w-1/2 h-1/3 lg:h-full">
+                                <div class="h-1/3 mt-7 md:mt-32 lg:mt-52 lg:w-[540px] overflow-wrap">
                                     <p class="text-center lg:text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                         Helping create better products, one app at a time
                                     </p>
@@ -127,60 +139,61 @@
               </div>
               
 
-              <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[560px] lg:mt-[620px]">
+              <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[540px] md:mt-[410px] lg:mt-[570px]">
                 <div class="small-img opacity-100">
-                    <img class="h-20" src="/assets/puzzle_small.png" alt="puzzle">
+                    <img class="h-20" src="/assets/puzzle_small-182f7864.png" alt="puzzle">
                 </div>
                 <div class="small-img opacity-60">
-                    <img class="h-20" src="/assets/handshake_small.png">
+                    <img class="h-20" src="/assets/handshake_small-ac20f5d8.png">
                 </div>
                 <div class="small-img opacity-60">
-                    <img class="h-20" src="/assets/VR_small.png">
+                    <img class="h-20" src="/assets/VR_small-7a7fb654.png">
                 </div>
               </div>
             </div>
           </section>
           <!-- Section2 -->
-          <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] lg:h-[1100px] overflow-hidden overflow-x-hidden">
-            <div class="relative flex flex-wrap items-start h-1/5">
+          <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[210px] h-[400px] md:h-[450px] overflow-hidden overflow-x-hidden">
+            <div class="relative flex flex-wrap items-start">
               
               <div
-                class="relative w-full h-full lg:w-1/2 z-10 mt-5 text-center"
+                class="relative w-full h-full z-10 mt-5 md:mt-0 text-center"
                 data-aos="fade-left"
                 data-aos-duration="600"
               >
-              <div class="lg:w-[720px] lg:mt-20">
+              <div class="lg:w-[1220px] 2xl:w-[1300px] lg:mt-4">
                 <span
-                  class="text-3xl lg:text-5xl font-clash font-medium block text-left text-[#9FCC3B]"
-                  >We are DigiMoksha.</span
+                  class="text-3xl lg:text-6xl font-extrabold block text-left text-[#9FCC3B] font-clash"
+                  >Your partner in your digital transformation journey</span
                 >
-                <p class="font-m text-left pt-4">
+                <!-- <p class="font-m text-left pt-4">
                     Your partner is digital transformation, design and people solutions.
-                </p>
-                <p class="font-light text-sm font-merriweather text-left mt-4">We help you find the right people. We can help you recruit people, we provide people on contract. </p>
-                <p class="font-light text-sm font-merriweather text-left mt-2">we execute digital transformation projects creating desktop and mobile applications </p>
-                <p class="font-light text-sm font-merriweather text-left mt-2">We provide design services and create successful products with delightful user experience</p>
-                <p class="font-light text-sm font-merriweather text-left mt-2">We conduct design thinking workshops for your teams and we help people transition to the role of UX designers from other functions.</p>
+                </p> -->
+                <p class="font-light text-sm 2xl:text-2xl font-merriweather text-left mt-4">We help you find the right people. We can help you recruit people, we provide people on contract. </p>
+                <p class="font-light text-sm 2xl:text-2xl font-merriweather text-left mt-2">we execute digital transformation projects creating desktop and mobile applications </p>
+                <p class="font-light text-sm 2xl:text-2xl font-merriweather text-left mt-2">We provide design services and create successful products with delightful user experience</p>
+                <p class="font-light text-sm 2xl:text-2xl font-merriweather text-left mt-2">We conduct design thinking workshops for your teams and we help people transition to the role of UX designers from other functions.</p>
               </div>
               </div>
               </div>
+            </div>
           </section>
           <!-- Section3 -->
           <section
-          class="relative z-10 bg-green-300 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full mx-5 md:mx-[210px] h-[730px] md:h-[900px] overflow-hidden overflow-x-hidden"
+          class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full mx-5 lg:mx-[210px] h-[1630px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
         >
-        <div class=" bg-red-200">
-          <h1 class="  font-clash text-[#9FCC3B] text-2xl lg:text-4xl">How we help our clients?</h1>
+        <div>
+          <h1 class="font-clash text-[#9FCC3B] text-2xl md:text-4xl font-bold">How we help our clients?</h1>
         </div>
         <div class="flex flex-wrap justify-around h-[600px] md:mt-14">
           <div class="w-72">
             <div class="relative">
-              <img class="absolute z-10 top-0" src="/assets/home-service-design-bg-f078eec7.svg">
-              <img class="relative h-72 w-64 mx-auto" src="/assets/home-service-design-0eaefb6a.png">
+              <img class="absolute top-2 left-5 z-10 h-72 w-60 mx-auto" src="/assets/home-service-design-0eaefb6a.png">
+              <img class="absolute z-0 top-3" src="/assets/home-service-design-bg-f078eec7.svg">
              </div>
-            <div class="mt-7">
-              <h3 class="font-clash text-lg font-medium">Our service design advisory helps you stay relevant</h3>
-              <p class="font-merriweather font-light leading-relaxed mt-3">We help you solve your client's problems most efficiently.</p>
+            <div class="mt-[320px]">
+              <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Our service design advisory helps you stay relevant</h3>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
             </div>
             <!-- <div class="h-10 w-10 rounded-full bg-white text-center my-auto font-thin hover:w-28 hover:bg-blue">></div> -->
             <!-- <div class="relative bg-blue-500 rounded-full py-2 px-4 flex items-center justify-between overflow-hidden transition duration-300 ease-in-out h-12 w-12 hover:w-24">
@@ -194,28 +207,37 @@
             <h2 class="btn-text hidden">Know More</h2>
             </div>
           </div> -->
-          <div class="test">
-            <div class="btn-test w-16 h-16 rounded-full bg-white"></div>
+          <div class="know-more-btn-container relative w-16 h-16 mt-3">
+            <div class="rounded-btn absolute w-12 h-12 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div>
+            <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
           </div>
           </div>
           <div class="relative w-72">
             <div>
-              <img class="h-64 w-64 mx-auto" src="/assets/home-workshop-d691f8de.png">
-              <img class="absolute z-10 top-0" src="/assets/home-workshop-bg-da792cf4.svg">
+              <img class="h-64 w-64 mx-auto absolute top-7 z-10" src="/assets/home-workshop-d691f8de.png">
+              <img class="absolute z-0 top-4" src="/assets/home-workshop-bg-da792cf4.svg">
             </div>
-            <div class="mt-[60px]">
-              <h3 class="font-clash text-lg font-medium">Enabling innovation through our Design Thinking Workshop</h3>
-              <p class="font-merriweather font-light leading-relaxed mt-3">Design thinking helps you solve problems in a systemetic step</p>
+            <div class="mt-[320px]">
+              <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Enabling innovation through our Design Thinking Workshop</h3>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">Design thinking helps you solve problems in a systemetic step</p>
+            </div>
+            <div class="know-more-btn-container relative w-16 h-16 mt-3">
+              <div class="rounded-btn absolute w-12 h-12 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div>
+              <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
             </div>
           </div>
           <div class="relative w-72">
-            <div>
-              <img src="/assets/home-user-exp-1747700b.png">
-              <img class="absolute z-10 top-0" src="/assets/home-user-exp-bg-8e0df16b.svg">
+            <div class="relative">
+              <img class="absolute top-9 z-10" src="/assets/home-user-exp-1747700b.png">
+              <img class="absolute z-0 left-2" src="/assets/home-user-exp-bg-8e0df16b.svg">
             </div>
-            <div class="mt-[130px]">
-              <h3 class="font-clash text-lg font-medium">Delightfu User Experiences for that are Predictable, Measurable and Repeatable</h3>
-              <p class="font-merriweather font-light leading-relaxed mt-3">We help you solve your client's problems most efficiently.</p>
+            <div class="mt-[320px]">
+              <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Delightfu User Experiences for that are Predictable, Measurable and Repeatable</h3>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
+            </div>
+            <div class="know-more-btn-container relative w-16 h-16 mt-3">
+              <div class="rounded-btn absolute w-12 h-12 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div>
+              <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
             </div>
           </div>
         </div>
@@ -272,178 +294,29 @@
     
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
-  <script>AOS.init()</script>
-        <script>
-            let menuButton = document.querySelector("#menu-button")
-            let menuItems = document.querySelector("#menu-items")
-            let menu = document.querySelector(".menu")
-            let touchstartX
-            menuButton.addEventListener("mouseover",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.remove("hidden")
-                menuButton.classList.add("hidden")
-              }
-            })
-            menu.addEventListener("mouseleave",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.add("hidden")
-                menuButton.classList.remove("hidden")
-              }
-            })
-            menuButton.addEventListener("touchstart",(e)=>{
-              e.preventDefault()
-              if(window.innerWidth<=768){
-                if (touchstartX === undefined) {
-      touchstartX = e.touches[0].clientX;
-      menuItems.classList.remove("hidden");
-      menuButton.classList.add("hidden");
-    } else {
-      touchstartX = undefined;
-      menuItems.classList.add("hidden");
-      menuButton.classList.remove("hidden");
-    }
-              }
-            })
-
-            let activePage = document.querySelector('.active-page')
-            menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-            //  menu.addEventListener("touchend",(e)=>{
-            //   e.preventDefault()
-            //    if(window.innerWidth<=768){
-            //     if (!menuItems.classList.contains("hidden")) {
-
-            //      menuItems.classList.add("hidden")
-            //      menu.classList.remove("hidden")
-            //    }
-            //   }
-            // })
-
+  <script>
+         //rounded button
+//  let btnContainer = document.querySelector('.know-more-btn-container')
+//             let knowMoreButton = btnContainer.querySelector('.rounded-btn')
+//             let arrow = btnContainer.querySelector('.arrow')
+//             let buttonText = btnContainer.querySelector('.btn-text')
            
-            const el= document.querySelector("#part3")
-    const title = document.querySelector('#title');
-    const info = document.querySelector('#info');
-    const service = document.querySelector('#service');
-    const t = document.querySelectorAll('.service');
-    let preiviouslyClickedBlock = null
-    let previouslyClickedServiceTitle = null
-    el.addEventListener('click',(event)=>{
-        if(event.target.classList.contains("title-info")){
-            // const text = event.target.querySelector("span").textContent
-            // console.log(text)
-            if(preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!==null){
-          preiviouslyClickedBlock.style.transform = ''
-          previouslyClickedServiceTitle.style.color = ''
-          previouslyClickedServiceTitle.classList.remove('white-bullet')
-            }
-            event.target.parentElement.style.transform = 'translateX(-28px)'
-             
-            console.log(event.target.parentElement)
-            event.target.style.color = '#317FEB'
-            event.target.classList.add('white-bullet')
-            preiviouslyClickedBlock = event.target.parentElement
-            previouslyClickedServiceTitle = event.target
-             title.textContent = event.target.textContent
-             info.textContent = event.target.nextElementSibling.textContent
-        }else if (event.target.parentElement.classList.contains('title-info')) {
-            title.textContent = event.target.parentElement.textContent;
-            info.textContent = event.target.nextElementSibling?event.target.nextElementSibling.textContent:'';
-          }
-        
-    })
+//             btnContainer.addEventListener('mouseover',(event)=>{
+//               event.target.classList.add('w-44')
+//               knowMoreButton.classList.add('bg-[#317FEB]')
+//               arrow.style.left= '138px'
+//               arrow.classList.add('text-white')
+//               buttonText.classList.remove('hidden')
+//             })
+//             btnContainer.addEventListener('mouseleave',()=>{
+//               knowMoreButton.classList.remove('w-44')
+//               knowMoreButton.classList.remove('bg-[#317FEB]')
+//               arrow.style.left= ''
+//               arrow.classList.remove('text-white')
+//               buttonText.classList.add('hidden')
+//             })
 
-    window.addEventListener("scroll", function() {
-    if (preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!== null) {
-      //resetPosition(prevClickedDiv);
-      preiviouslyClickedBlock.style.transform = ''
-      previouslyClickedServiceTitle.style.color = ''
-      previouslyClickedServiceTitle.classList.remove('white-bullet')
-    }
-  });
 
-        const carousel = document.querySelector('.carousel');
-        const carouselItems = carousel.querySelectorAll('.carousel-item');
-        const smallImages = document.querySelectorAll('.small-img')
-        const text=document.querySelectorAll('.text')
-        const img1 = document.querySelectorAll('.img1')
-        const img2 = document.querySelectorAll('.img2')
-       
-        let currentItemIndex = 0;
-        
-        console.log(img1)
-        setTimeout(() => {
-         
-          img1[currentItemIndex].classList.remove('img1-zoom-out')
-          img1[currentItemIndex].classList.add('img1-zoom-in')
-  img2[currentItemIndex].classList.remove('img2-zoom-in')
-  
-  // console.log(img1)
-  // console.log(img2)
-
-  img2[currentItemIndex].classList.add('img2-zoom-out')
-   carouselItems[currentItemIndex].style.opacity = 0
-  // img1[currentItemIndex].style.opacity = 0;
-  // img2[currentItemIndex].style.opacity = 0;
-  // console.log(img2)
-  // img2[currentItemIndex].setAttribute('data-aos-delay', '0')
-  console.log(img1)
-  
-          text[currentItemIndex].classList.remove('animate-slide-left')
-          text[currentItemIndex].classList.add('animate-slide-right')
-          text[currentItemIndex].style.opacity=0
-        }, 4000);
-    setInterval(() => {
-    //text[currentItemIndex].classList.add('animate-slide-right');
-  carouselItems[currentItemIndex].style.opacity = 0;
-  // img1[currentItemIndex].style.opacity = 0;
-  // img2[currentItemIndex].style.opacity = 0;
-  img1[currentItemIndex].classList.remove('img1-zoom-in')
-  img2[currentItemIndex].classList.remove('img2-zoom-out')
-  smallImages[currentItemIndex].style.opacity = 0.6;
-  if(text[currentItemIndex].classList.contains('animate-slide-right')){
-  text[currentItemIndex].classList.remove('animate-slide-right')
-  }
-//   text[currentItemIndex].classList.add('animate-slide-right')
-
-  currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
-  
-  
-  smallImages[currentItemIndex].style.opacity = 1;
-  carouselItems[currentItemIndex].style.opacity = 1;
-  // img1[currentItemIndex].style.opacity = 1;
-  // img2[currentItemIndex].style.opacity = 1;
-  img1[currentItemIndex].classList.add('img1-zoom-out')
-  img2[currentItemIndex].classList.add('img2-zoom-in')
-  console.log(img1)
-  
-  text[currentItemIndex].classList.add('animate-slide-left')
-  setTimeout(() => {
-    img1[currentItemIndex].classList.remove('img1-zoom-out')
-  img2[currentItemIndex].classList.remove('img2-zoom-in')
-  img1[currentItemIndex].classList.add('img1-zoom-in')
-  img2[currentItemIndex].classList.add('img2-zoom-out')
-  carouselItems[currentItemIndex].style.opacity = 0;
-  // img1[currentItemIndex].style.opacity = 0;
-  // img2[currentItemIndex].style.opacity = 0;
-    text[currentItemIndex].classList.remove('animate-slide-left')
-    text[currentItemIndex].classList.add('animate-slide-right')
-    text[currentItemIndex].style.opacity=0
-  }, 4000);
-}, 5000);
-
-//rounded button
-let btn = document.querySelector('.test')
-            let knowMoreButton = document.querySelector('.btn-test')
-           
-            btn.addEventListener('mouseover',()=>{
-              knowMoreButton.classList.add('w-16')
-              
-            })
 </script>
         
 </body>

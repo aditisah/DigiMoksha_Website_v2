@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
+    <!-- <script src="./js/services.js"></script> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
@@ -17,21 +18,27 @@
 </head>
 <body class="bg-[#F5F5F5]">
   <div class="relative">
-    <div class="absolute left-0 right-0 bottom-[800px] -top-[900px] md:bottom-[1050px] md:-top-[1120px]  bg-[url('/assets/design_background.png')] bg-center bg-no-repeat bg-[length:600px_650px] md:bg-[length:1540px_1550px] 2xl:bg-[length:2170px_1700px]">
+    <div class="absolute left-0 right-0 bottom-[800px] -top-[900px] md:bottom-[1050px] md:-top-[1120px]  bg-[url('./assets/design_background.png')] bg-center bg-no-repeat bg-[length:600px_650px] md:bg-[length:1540px_1550px] 2xl:bg-[length:2170px_1700px]">
       <div class="md:h-[800px]"></div>
     </div>
     <!-- header -->
-    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[250px] bg-white-500">
+    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
         <div class="relative h-10 w-28">
           <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
         </div>
         <nav class="menu flex items-center justify-end">
-          <div id="menu-button" class="absolute cursor-pointer top-[46px]">
+          <div id="menu-button" class="fixed cursor-pointer top-[46px] z-40">
             <div class="h-[2px] w-9 bg-black ml-4"></div>
             <p class="active-page my-2 text-right font-light"><a href="./design.html">Design</a></p>
             <div class="h-[2px] w-9 bg-black mt-2 ml-4"></div>
         </div>
-          <div id="menu-items" class="hidden absolute top-[46px] justify-end z-20">
+        <!-- menu white overlay for mobile -->
+        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
+          <button id="menu-close-button" class="absolute top-10 left-4 p-2 rounded-full bg-gray-200 text-white" onClick = 'menuCloseButton()'>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+          </button>
+        </div>
+          <div id="menu-items" class="hidden fixed top-[46px] justify-end z-50">
             <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-light">
                           
@@ -117,7 +124,7 @@
         </div>
       </section>
       <!-- Section2 -->
-      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] md:h-[1500px] 2xl:h-[1200px] overflow-hidden overflow-x-hidden">
+      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] md:h-[1500px] 2xl:h-[1000px] overflow-hidden overflow-x-hidden">
         <div class="relative flex flex-wrap items-start">
           <div class="mr-3">
             <span
@@ -145,29 +152,31 @@
         </div>
             <!-- Section3 -->
       <section
-      class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[700px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+      class="relative z-50 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[700px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
     <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-1 md:py-12 text-white font-clash font-bold">Design Services</h1></div>
     <div class=" absolute flex flex-wrap mx-5 lg:mx-[250px] md:w-full md:h-full md:py-[70px]">
       <!-- mobile screen -->
       <div class="slider md:hidden relative overflow-hidden">
-        <div class="slider-container relative flex">
+        <div class="slider-container h-48 relative flex">
           <!-- Content for smaller screens -->
           <div class="slider-slide">
-            <img class="mx-auto h-36 w-36" src="./assets/services-ux-design.png" alt="Image 1">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-ux-design.png" alt="Image 1">
           </div>
           <div class="slider-slide">
-            <img class="mx-auto h-36 w-36" src="./assets/services-service-design.png" alt="Image 1">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-service-design.png" alt="Image 2">
           </div>
           <div class="slider-slide">
-            <img class="mx-auto h-36 w-36" src="./assets/services-workshop.png" alt="Image 2">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-workshop.png" alt="Image 3">
           </div>
           <div class="slider-slide">
-            <img class="mx-auto h-36 w-36" src="./assets/services-advisory.png" alt="Image 3">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-advisory.png" alt="Image 4">
           </div>
         </div>
-
-        <div class="slider-navigation md:hidden"> <!-- Hidden on mobile screens -->
+        <div>
+          <img class="mx-auto -mt-48  h-44 w-[180px]" src="./assets/service-bg.svg" alt="Image 1">
+        </div>
+        <div class="slider-navigation md:hidden"> <!-- Hidden on larger screens -->
           <!-- HTML structure for larger screens -->
           <svg class="slider-prev z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
           <svg class="slider-next z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
@@ -181,9 +190,9 @@
             <p id="info" class="font-thin text-sm font-merriweather leading-loose md:leading-relaxed pt-3">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
             <button class="h-12 w-36 md:h-16 md:w-40 mt-4 border-0 md:border border-black rounded-full bg-[#317FEB] md:bg-transparent text-white md:text-black font-clash font-medium text-base tracking-widest md:text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
         </div>
-          <div id="part2" class="hidden md:block relative w-1/4" data-aos="fade-up" data-aos-duration="1000">
-            <img id="service-background-img" class="absolute 2xl:left-20 md:top-16 h-80 w-80" src ="./assets/about-image-back.svg" data-aos="fade-up">
-            <img id="service-front-img" class="absolute md:left-20 2xl:left-32 md:top-24 2xl:top-14 h-52 w-52" src ="./assets/services-ux-design.png" data-aos="fade-up">
+          <div id="part2" class="hidden relative md:block w-1/4" data-aos="fade-up" data-aos-duration="1000">
+            <img id="service-background-img" class="absolute h-64 w-64 top-2 left-11 z-0 2xl:left-20" src ="./assets/service-bg.svg" data-aos="fade-up">
+            <img id="service-front-img" class="absolute z-40 top-4 left-[68px] h-52 w-52 2xl:left-32 2xl:top-14" src ="./assets/services-ux-design.png" data-aos="fade-up">
           </div>
           <div id="part3" class="hidden md:block w-1/5">
             <div class="tele-med flex flex-col justify-center">
@@ -274,141 +283,7 @@
     
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
-          <script>
-          AOS.init()
-          let menuButton = document.querySelector("#menu-button")
-            let menuItems = document.querySelector("#menu-items")
-            let menu = document.querySelector(".menu")
-            let touchstartX
-            menuButton.addEventListener("mouseover",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.remove("hidden")
-                menuButton.classList.add("hidden")
-              }
-            })
-            menu.addEventListener("mouseleave",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.add("hidden")
-                menuButton.classList.remove("hidden")
-              }
-            })
-            menuButton.addEventListener("touchstart",(e)=>{
-              e.preventDefault()
-              if(window.innerWidth<=768){
-                if (touchstartX === undefined) {
-      touchstartX = e.touches[0].clientX;
-      menuItems.classList.remove("hidden");
-      menuButton.classList.add("hidden");
-    } else {
-      touchstartX = undefined;
-      menuItems.classList.add("hidden");
-      menuButton.classList.remove("hidden");
-    }
-              }
-            })
-       
-              let activePage = document.querySelector('.active-page')
-              menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-          const el= document.querySelector("#part3")
-    const title = document.querySelector('#title');
-    const info = document.querySelector('#info');
-    const serviceFrontImage = document.querySelector('#service-front-img');
-    const service = document.querySelector('#service');
-    const t = document.querySelectorAll('.service');
-    let preiviouslyClickedBlock = null
-    let previouslyClickedServiceTitle = null
-    el.addEventListener('click',(event)=>{
-        if(event.target.classList.contains("title-info")){
-            // const text = event.target.querySelector("span").textContent
-            // console.log(text)
-            if(preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!==null){
-          preiviouslyClickedBlock.style.transform = ''
-          previouslyClickedServiceTitle.style.color = ''
-          previouslyClickedServiceTitle.classList.remove('white-bullet')
-            }
-            event.target.parentElement.style.transform = 'translateX(-28px)'
-             
-            console.log(event.target.parentElement)
-            event.target.style.color = '#317FEB'
-            event.target.classList.add('white-bullet')
-            preiviouslyClickedBlock = event.target.parentElement
-            previouslyClickedServiceTitle = event.target
-             title.textContent = event.target.textContent
-             info.textContent = event.target.nextElementSibling.textContent
-             console.log(info.textContent)
-             let image = event.target.parentElement.querySelector('.service-img')
-             let imgSource = image.getAttribute('src')
-             serviceFrontImage.src =  imgSource
-        }else if (event.target.parentElement.classList.contains('title-info')) {
-            title.textContent = event.target.parentElement.textContent;
-            info.textContent = event.target.nextElementSibling?event.target.nextElementSibling.textContent:'';
-          }
-        
-       
-        // document.getElementById("title").innerHTML = text
-        //document.getElementById("info").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    })
-
-    window.addEventListener("scroll", function() {
-    if (preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!== null) {
-      //resetPosition(prevClickedDiv);
-      preiviouslyClickedBlock.style.transform = ''
-      previouslyClickedServiceTitle.style.color = ''
-      previouslyClickedServiceTitle.classList.remove('white-bullet')
-    }
-  });
-  
-const slider = document.querySelector('.slider');
-const sliderContainer = document.querySelector('.slider-container');
-const slides = document.querySelectorAll('.slider-slide');
-const slideWidth = slides[0].clientWidth;
-
-let slideIndex = 0;
-
-function updateSliderPosition() {
-   sliderContainer.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-  // slides.forEach((slide, index) => {
-  //   if (index === slideIndex) {
-  //     slide.style.display = "block"; // Display the current slide image
-  //   } else {
-  //     slide.style.display = "none"; // Hide the other slide images
-  //   }
-  // });
-}
-
-function nextSlide() {
-  slideIndex = (slideIndex + 1) % slides.length;
-  updateSliderPosition();
-}
-
-function prevSlide() {
-  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-  updateSliderPosition();
-}
-
-let serviceDetail = document.querySelectorAll('.service-detail')
-let serviceTitle = document.querySelectorAll('.title-info')
-document.querySelector('.slider-prev').addEventListener('click', ()=>{
-  prevSlide()
-console.log(serviceDetail[slideIndex])
-title.textContent = serviceTitle[slideIndex].textContent
-info.textContent = serviceDetail[slideIndex].textContent
-});
-document.querySelector('.slider-next').addEventListener('click', ()=>{
-  nextSlide()
-  title.textContent = serviceTitle[slideIndex].textContent
-info.textContent = serviceDetail[slideIndex].textContent
-} );
-
-// setInterval(nextSlide, 3000); // Auto slide every 3 seconds
-
-
-          </script>
+  <script src="./js/main.js"></script>     
+  <script src="./js/services.js"></script>     
 </body>
 </html>

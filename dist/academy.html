@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
@@ -17,39 +17,45 @@
 </head>
 <body class="bg-[#F5F5F5]">
   <div class="relative">
-    <div class="absolute left-0 right-0 bottom-[900px] -top-[520px]  bg-[url('/assets/academy-bg.svg')] bg-center bg-no-repeat bg-[length:1380px_1550px] 2xl:bg-[length:2170px_1700px]">
+    <div class="absolute left-0 right-0 bottom-[100px] -top-[1880px] md:bottom-[900px] md:-top-[520px]  bg-[url('./assets/academy-bg.svg')] bg-center bg-no-repeat bg-[length:450px_1750px] md:bg-[length:1380px_1550px] 2xl:bg-[length:2170px_1700px]">
       <div class="md:h-[800px]"></div>
     </div>
     <!-- header -->
-    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[250px] bg-white-500">
+    <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
         <div class="relative h-10 w-28">
-          <a href="/index.html"><img src="/assets/logo_hd.png" alt="logo"/></a>
+          <a href="./index.html"><img src="./assets/logo_hd.png" alt="logo"/></a>
         </div>
-        <nav class="menu flex items-center justify-end">
-          <div id="menu-button" class="absolute cursor-pointer top-[46px]">
+        <div class="menu flex items-center justify-end">
+          <div id="menu-button" class="fixed cursor-pointer top-[46px] z-50">
             <div class="h-[2px] w-9 bg-black ml-9"></div>
-            <p class="active-page my-2 text-right font-light"><a href="/academy.html">Academy</a></p>
+            <p class="active-page my-2 text-right font-light"><a href="./academy.html">Academy</a></p>
             <div class="h-[2px] w-9 bg-black mt-2 ml-9"></div>
         </div>
-          <div id="menu-items" class="hidden absolute top-[46px] justify-end z-20">
-            <div class="h-[2px] w-9 md:ml-[52px] bg-black"></div>
+        <!-- menu white overlay for mobile -->
+        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
+          <button id="menu-close-button" class="absolute top-10 left-4 p-2 rounded-full bg-gray-200 text-white" onClick = 'menuCloseButton()'>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+          </button>
+        </div>
+          <div id="menu-items" class="hidden fixed top-[46px] justify-end z-50">
+            <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
                         <ul class="text-black text-right font-light">
-                            <li class="mt-2"><a href="/index.html">Home</a></li>
-                            <li><a href="/about-us.html">About us</a></li>
-                            <li><a href="/engineering.html">Engineering</a></li>
-                            <li><a href="/design.html">Design</a></li>
-                            <li><a href="/academy.html">Academy</a></li>
-                            <li><a href="/portfolio.html">Portfolio</a></li>
-                            <li class="mb-2"><a href="/contact.html">Contact</a></li>
+                            <li class="mt-2"><a href="./index.html">Home</a></li>
+                            <li><a href="./about-us.html">About us</a></li>
+                            <li><a href="./engineering.html">Engineering</a></li>
+                            <li><a href="./design.html">Design</a></li>
+                            <li><a href="./academy.html">Academy</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li class="mb-2"><a href="./contact.html">Contact</a></li>
                         </ul>
-                        <div class="h-[2px] w-9 top-[1700px] md:ml-[52px] bg-black"></div>
+                        <div class="h-[2px] w-9 top-[1700px] ml-[52px] bg-black"></div>
           </div>
     
           
-        </nav>
+        </div>
       </header>
       <!-- Section1 -->
-    <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-[250px] h-[649px] md:h-[550px] 2xl:h-[700px] overflow-hidden overflow-x-hidden">
+    <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-[250px] h-[550px] md:h-[550px] 2xl:h-[700px] overflow-hidden overflow-x-hidden">
       <div class="relative h-[350px] md:h-[600px]">
         <div class="lg:w-full flex flex-wrap items-center justify-center">
           <div class="w-full h-full mx-auto">
@@ -58,11 +64,11 @@
                 <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100"> -->
                     <div class="relative flex flex-wrap w-full h-[550px] md:h-[620px]">
                       <div id="image" class=" relative w-[90%] md:w-[55%] h-[75%] lg:h-full">
-                          <img class="absolute h-[420px] left-6" src="/assets/academy_back.svg" alt="background_img" data-aos="zoom-out" data-aos-duration="1000">
-                          <img class="absolute left-8 top-6" src="/assets/academy.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1000">
+                          <img class="absolute h-[420px] left-6" src="./assets/academy_back.svg" alt="background_img" data-aos="zoom-out" data-aos-duration="1000">
+                          <img class="absolute left-8 top-6" src="./assets/academy.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1000">
                       </div>
                         <div class="text w-full md:w-[45%] h-1/3 md:h-full">
-                            <div class="h-1/3 mt-7 md:mt-28 2xl:mt-64 md:ml-11" data-aos="fade-left" data-aos-offset="50%" data-aos-duration="1200">
+                            <div class="h-1/3 mt-7 md:mt-28 2xl:mt-56 md:ml-11" data-aos="fade-left" data-aos-offset="50%" data-aos-duration="1200">
                                 <p class="font-light 2xl:font-thin text-center md:text-left text-3xl md:text-4xl 2xl:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
                                   Get Ready for a lucrative career in User Experience Design
                                 </p>
@@ -73,7 +79,7 @@
                   <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-0">
                     <div class="relative flex flex-wrap w-full h-[500px]">
                         <div id="image" class="lg:w-1/2 h-2/3 lg:h-full w-[76%]">
-                            <img src="/assets/handshake_large.png" alt="handshake">
+                            <img src="./assets/handshake_large.png" alt="handshake">
                         </div>
                         <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
                             <div class="lg:h-1/3 mt-7 lg:mt-52 w-[440px]">
@@ -106,19 +112,19 @@
 <!-- 
           <div id="small-images" class="flex justify-center space-x-8 lg:w-full mt-[560px] lg:mt-[620px]">
             <div class="small-img opacity-100">
-                <img class="h-20" src="/assets/puzzle_small.png" alt="puzzle">
+                <img class="h-20" src=.assets/puzzle_small.png" alt="puzzle">
             </div>
             <div class="small-img opacity-60">
-                <img class="h-20" src="/assets/handshake_small.png">
+                <img class="h-20" src=.assets/handshake_small.png">
             </div>
             <div class="small-img opacity-60">
-                <img class="h-20" src="/assets/VR_small.png">
+                <img class="h-20" src=.assets/VR_small.png">
             </div>
           </div> -->
         </div>
       </section>
       <!-- Section2 -->
-      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] md:h-[1400px] 2xl:h-[1200px] overflow-hidden overflow-x-hidden">
+      <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[250px] md:h-[1400px] 2xl:h-[920px] overflow-hidden overflow-x-hidden">
         <div class="relative">
           <div class="mr-3">
             <span
@@ -127,23 +133,24 @@
           >
           </div>
           <div class="relative">
-            <div class="wrapper fixed md:top-[665px] md:right-[188px] w-16 h-16"><div class="icon fixed md:top-[670px] md:right-48 h-12 w-12 rounded-full bg-[#317FEB] transition-all hover:duration-700 "></div></div>
+            <div class="wrapper fixed top-[665px] right-0.5 md:right-[188px] w-16 h-16"><div class="icon fixed top-[670px] right-2 md:right-48 2xl:top-[825px] h-[55px] w-[55px] rounded-full bg-[#317FEB] transition-all hover:duration-700 z-40"></div>
             <!-- <<img class="book-seat-icon fixed md:top-[680px] md:right-[203px] h-8 w-8" src="/assets/calendar-regular.svg"> -->
-            <svg class="book-seat-icon fixed md:top-[675px] md:right-[200px] h-8 w-8" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
-            <div class="book-seat-text hidden fixed font-clash text-sm text-white text-justify md:top-[685px] md:right-64 tracking-widest"><h3>Block Your Seat Now And Save</h3></div>
+            <svg class="book-seat-icon fixed top-[679px] 2xl:top-[835px] right-[19px] z-50 md:right-[203px] h-8 w-8" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
+            <div class="book-seat-text hidden fixed font-clash text-sm md:text-base text-white z-50 text-justify top-[688px] md:top-[686px] 2xl:top-[841px] right-6 tracking-wide"><h3>Block Your Seat Now And Save</h3></div>
           </div>
+        </div>
            <div class="mr-4 lg:mr-36">
             <p class="font-merriweather font-semibold text-xl lg:text-3xl text-left text-[#9FCC3B] pt-4">
               Gain a valuable skillset that will elevate your work, influence product decisions, and create delightful experiences for your users.
             </p>
             </div>
             <div class="mr-1 lg:mr-48">
-            <p class="font-light text-lg font-merriweather text-left mt-4">Welcome to the Three-Month UX Design Course, led by an industry veteran and tailored for non-designers already working in tech companies. In today's competitive landscape, user experience (UX) design has become a critical component for success in the digital world. This course is designed to equip you with the essential skills and knowledge needed to excel in UX design, even if you come from a non-design background</p>
-            <p class="font-light text-lg font-merriweather text-left mt-4">Led by our experienced industry veteran, who has a wealth of practical knowledge and a deep understanding of the UX design landscape, this course will provide you with a comprehensive and hands-on learning experience. Over the course of three months, we have carefully structured weekend classes that accommodate your busy schedule, allowing you to balance your work commitments while immersing yourself in the world of UX design. </p>
-            <p class="font-light text-lg font-merriweather text-left mt-4">Whether you are a developer, product manager, marketer, or any other professional working in the tech industry, this course will empower you to understand and apply UX design principles effectively. We believe that a diverse skill set enhances collaboration and drives innovation. By embracing UX design, you will gain a valuable perspective that will elevate your work, influence product decisions, and create delightful experiences for your users. </p>
-            <p class="font-light text-lg font-merriweather text-left mt-4">Throughout the course, you will delve into the key aspects of UX design, including user research, information architecture, interaction design, visual design, and usability testing. Our hands-on approach will ensure that you not only grasp the theory but also put it into practice through real-world projects and exercises. You will have the opportunity to collaborate with your peers, exchange insights, and receive personalized feedback from our industry veteran, enabling you to grow and refine your design skills.</p>
-            <p class="font-light text-lg font-merriweather text-left mt-4">Beyond technical skills, we will explore the importance of empathy, understanding users' needs, and fostering a user-centered mindset. By adopting these principles, you will gain a competitive edge in delivering products and services that truly resonate with your target audience.</p>
-            <p class="font-light text-lg font-merriweather text-left mt-4">Upon completion of the course, you will receive a certificate recognizing your achievement and newfound expertise in UX design. This credential will bolster your professional profile and open doors to exciting career opportunities in the field.</p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Welcome to the Three-Month UX Design Course, led by an industry veteran and tailored for non-designers already working in tech companies. In today's competitive landscape, user experience (UX) design has become a critical component for success in the digital world. This course is designed to equip you with the essential skills and knowledge needed to excel in UX design, even if you come from a non-design background</p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Led by our experienced industry veteran, who has a wealth of practical knowledge and a deep understanding of the UX design landscape, this course will provide you with a comprehensive and hands-on learning experience. Over the course of three months, we have carefully structured weekend classes that accommodate your busy schedule, allowing you to balance your work commitments while immersing yourself in the world of UX design. </p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Whether you are a developer, product manager, marketer, or any other professional working in the tech industry, this course will empower you to understand and apply UX design principles effectively. We believe that a diverse skill set enhances collaboration and drives innovation. By embracing UX design, you will gain a valuable perspective that will elevate your work, influence product decisions, and create delightful experiences for your users. </p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Throughout the course, you will delve into the key aspects of UX design, including user research, information architecture, interaction design, visual design, and usability testing. Our hands-on approach will ensure that you not only grasp the theory but also put it into practice through real-world projects and exercises. You will have the opportunity to collaborate with your peers, exchange insights, and receive personalized feedback from our industry veteran, enabling you to grow and refine your design skills.</p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Beyond technical skills, we will explore the importance of empathy, understanding users' needs, and fostering a user-centered mindset. By adopting these principles, you will gain a competitive edge in delivering products and services that truly resonate with your target audience.</p>
+            <p class="font-light text-base md:text-lg font-merriweather text-left mt-4">Upon completion of the course, you will receive a certificate recognizing your achievement and newfound expertise in UX design. This credential will bolster your professional profile and open doors to exciting career opportunities in the field.</p>
            </div>
             
           </div>
@@ -151,144 +158,94 @@
         </div>
             <!-- Section3 -->
             <section
-            class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full h-[2300px] md:h-[1950px] 2xl:h-[1500px]  mx-5 lg:mx-[250px] overflow-hidden overflow-x-hidden"
+            class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full h-[2600px] md:h-[1950px] 2xl:h-[1900px]  mx-5 lg:mx-[250px] overflow-hidden overflow-x-hidden"
           >
           <div class="relative w-full mt-1">
             <div><h1 class="w-full text-2xl md:text-3xl font-bold text-[#9FCC3B] font-clash">What will you learn in the workshop?</h1></div>
-            <div class=" lg:w-2/3 grid grid-cols-3 lg:grid-cols-3 gap-x-10 md:gap-x-56 md:gap-y-12 mt-4">
+            <div class=" lg:w-2/3 grid grid-cols-2 lg:grid-cols-3 gap-x-10 md:gap-x-56 md:gap-y-12 mt-4">
               <div class="h-24 w-28 mt-8">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full" src="/assets/understanding.svg">
+                  <img class="h-full w-full" src="./assets/understanding.svg">
               </div>
                   <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Understanding</p></div>
               </div>
-              <div class="h-24 w-56 mt-8">
+              <div class="h-24 w-28 md:w-56 mt-8">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full z-10" src="/assets/wireframing.svg">
+                  <img class="h-full w-full z-10" src="./assets/wireframing.svg">
               </div>
                   <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Wireframing</p></div>
               </div>
-              <div class="h-24 w-56 mt-8">
+              <div class="h-24 w-28 md:w-56 mt-8">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full z-10" src="/assets/user-research.svg">
+                  <img class="h-full w-full z-10" src="./assets/user-research.svg">
               </div>
                   <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">User Research</p></div>
               </div>
-              <div class="h-24 w-40">
+              <div class="h-24 w-32 md:w-40 mt-8 md:mt-0">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full z-10" src="/assets/design-presentation.svg">
+                  <img class="h-full w-full z-10" src="./assets/design-presentation.svg">
               </div>
-                  <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Design Presentation</p></div>
+                  <div class="w-40"><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Design Presentation</p></div>
               </div>
-              <div class="h-24 w-56">
+              <div class="h-24 w-28 md:w-56 mt-8 md:mt-0">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full z-10" src="/assets/ux-strategy.svg">
+                  <img class="h-full w-full z-10" src="./assets/ux-strategy.svg">
               </div>
                   <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">UX Strategy</p></div>
               </div>
-              <div class="h-24 w-56">
+              <div class="h-24 w-36 md:w-56 mt-8 md:mt-0">
                 <div class="relative w-20 h-16 mx-auto">
-                  <img class="h-full w-full z-10" src="/assets/design-best-practices.svg">
+                  <img class="h-full w-full z-10" src="./assets/design-best-practices.svg">
               </div>
-                  <div class="w-full"><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Design Best Practices</p></div>
+                  <div class="w-48"><p class="font-merriweather text-left md:text-center font-thin pt-1 text-[#003E7B]">Design Best Practices</p></div>
               </div>
               
           </div>
-            <!-- <div id="icons" class="flex flex-wrap justify-around w-full lg:h-1/2 mt-6">
-                <div class="w-44">
-                    <div class="relative w-20 h-16 mx-auto">
-                        <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/understanding_img.png">
-                        <img class="absolute top-4 z-20" src="/assets/understanding_background.png">
-                    </div>
-                    <div><p class="font-merriweather text-center font-thin pt-1 text-[#003E7B]">Understanding</p></div>
-                    <div><p class="font-montserrat text-center">Develop a deep understanding of the user and the business</p></div>
-                </div>
-                <div class="w-36 md:mt-28">
-                    <div class="relative w-20 h-16 mx-auto">
-                        <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/define_img_HD.png">
-                        <img class="absolute top-4 z-20" src="/assets/define_background.png">
-                    </div>
-                    <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Define</p></div>
-                    <div><p class="font-montserrat text-center">Develop a deep understanding of the user and the business</p></div>
-                </div>
-                <div class="w-36">
-                    <div class="relative w-20 h-16 mx-auto">
-                        <img class="absolute top-1 left-3 w-14 h-11 z-50" src="/assets/ideate_img_HD.png">
-                        <img class="absolute h-[90%] top-4 z-20" src="/assets/ideate_background_HD.png">
-                    </div>
-                    <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Ideate</p></div>
-                    <div><p class="font-montserrat text-center">Brainstorm potential solutions</p></div>
-                </div>
-                <div class="w-36 md:mt-28">
-                    <div class="relative w-20 h-16 mx-auto">
-                        <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/prototype_img_HD.png">
-                        <img class="absolute top-4 z-20" src="/assets/prototype_background.png">
-                    </div>
-                    <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Prototype</p></div>
-                    <div><p class="font-montserrat text-center">Design prototypes to test the solutions</p></div>
-            </div>
-                <div class="w-36">
-                    <div class="relative w-20 h-16 mx-auto">
-                        <img class="absolute top-1 left-4 w-14 h-11 z-50" src="/assets/refine_img_HD.png">
-                        <img class="absolute top-4 z-20" src="/assets/refine_background.png">
-                    </div>
-                    <div><p class="font-merriweather font-thin text-center pt-1 text-[#003E7B]">Refine</p></div>
-                    <div class="font-montserrat text-center"><p>Continuous short cycle innovation process to keep improving the design.</p></div>
-                </div>
-            </div> -->
-            <!-- <div class="md:h-1/5 md:w-3/5 mt-7 md:mt-14">
-                <div><h1 class="text-[#9FCC3B] text-3xl lg:text-4xl font-[1000] font-clash">Requirements</h1></div>
-                <div><p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum a eros vitae volutpat. Nullam massa magna, viverra in ullamcorper sed, fermentum in sem.</p></div>
-            </div>
-            <div class="md:h-1/5 md:w-3/5 mt-7 md:mt-10">
-                <div><h1 class="text-[#9FCC3B] text-3xl lg:text-4xl font-[1000] font-clash">Benefits</h1></div>
-                <div><p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum a eros vitae volutpat. Nullam massa magna, viverra in ullamcorper sed, fermentum in sem.</p></div>
-            </div> -->
         </div>
 
         <!-- methodology -->
         <div class="relative w-full mt-24">
           <div><h1 class="w-1/3 text-2xl md:text-3xl font-bold text-[#9FCC3B] font-clash">Methodology</h1></div>
-          <div class=" lg:w-2/3 grid grid-cols-3 lg:grid-cols-3 gap-x-10 md:gap-x-56 md:gap-y-12 mt-4">
+          <div class=" lg:w-2/3 grid grid-cols-2 lg:grid-cols-3 gap-x-10 md:gap-x-[310px] md:gap-y-12 mt-4">
             <div class=" relative h-36 w-32 mt-8">
               <div class="relative w-20 h-16 mx-auto">
                 <h3 class="absolute font-clash font-bold text-4xl top-4 left-1  z-20">50+</h3>
-                <img class="absolute top-4 z-0 w-16 h-14" src="/assets/ideate_background_HD.png">
+                <img class="absolute top-4 z-0 w-16 h-14" src="./assets/ideate_background_HD.png">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Hours Of In Person Classes</p></div>
             </div>
             <div class="h-24 w-24 mt-8">
               <div class="relative w-20 h-16 mx-auto">
-                <h3 class="absolute font-clash font-bold text-4xl top-4 left-1 z-20">50+</h3>
-                <img class="absolute top-4 w-16 h-16 z-0" src="/assets/in-person-classes.svg">
+                <h3 class="absolute font-clash font-bold text-4xl top-4 left-4 z-20">50+</h3>
+                <img class="absolute top-4 left-4 w-16 h-16 z-0" src="./assets/in-person-classes.svg">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Hours of assignments</p></div>
             </div>
-            <div class="h-24 w-24 mt-8">
+            <div class="h-24 w-24 md:mt-8">
               <div class="relative w-20 h-16 mx-auto">
-                <img class="absolute top-6 left-4 w-12 h-12 z-20" src="/assets/define_img_HD.png">
-                <img class="absolute top-4 z-0 w-16 h-16" src="/assets/design-portfolio-bg.svg">
+                <img class="absolute top-6 left-4 w-12 h-12 z-20" src="./assets/define_img_HD.png">
+                <img class="absolute top-4 z-0 w-16 h-16" src="./assets/design-portfolio-bg.svg">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Design Portfolio</p></div>
             </div>
             <div class="h-24 w-24">
               <div class="relative w-20 h-16 mx-auto">
-                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="/assets/live-projects-img.svg">
-                <img class="absolute top-2 left-1 z-0" src="/assets/live-projects-bg.svg">
+                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="./assets/live-projects-img.svg">
+                <img class="absolute top-2 left-1 z-0" src="./assets/live-projects-bg.svg">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Live Projects</p></div>
             </div>
-            <div class="h-24 w-24">
+            <div class="h-24 w-24 mt-8 md:mt-0">
               <div class="relative w-20 h-16 mx-auto">
-                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="/assets/interactive-sessions-img.svg">
-                <img class="absolute top-2 z-0" src="/assets/Interactive-sessions-bg.svg">
+                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="./assets/interactive-sessions-img.svg">
+                <img class="absolute top-2 z-0" src="./assets/Interactive-sessions-bg.svg">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Interactive Sessions</p></div>
             </div>
-            <div class="h-24 w-24">
+            <div class="h-24 w-24 mt-8 md:mt-0">
               <div class="relative w-20 h-16 mx-auto">
-                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="/assets/presentation-img.svg">
-                <img class="absolute top-2 left-1 z-0" src="/assets/Peer-presentations-bg.svg">
+                <img class="absolute top-1 left-4 w-14 h-11 z-20" src="./assets/presentation-img.svg">
+                <img class="absolute top-2 left-1 z-0" src="./assets/Peer-presentations-bg.svg">
             </div>
                 <div><p class="font-merriweather text-center font-thin mt-5 text-[#003E7B] w-32">Peer presentations</p></div>
             </div>
@@ -297,9 +254,9 @@
       
         <!-- Fee Options -->
         <div class="relative w-full mt-24">
-          <div><h1 class="w-1/3 text-2xl md:text-3xl font-bold text-[#9FCC3B] font-clash">Fee Options</h1></div>
+          <div><h1 class="md:w-1/3 text-2xl md:text-3xl font-bold text-[#9FCC3B] font-clash">Fee Options</h1></div>
           <div class=" lg:w-2/3 grid grid-cols-1 md:grid-cols-2 md:gap-48 mt-4">
-            <div class="h-24 w-24 mt-8">
+            <div class="h-24 w-24 ml-20 md:ml-0 mt-8">
               <div class="relative w-56 h-[158px] mx-auto">
                 <div class="absolute w-56 left-1 top-3 text-center">
                   <h4 class="font-merriweather font-light">Pay once and save Rs.6000</h4>
@@ -307,11 +264,11 @@
                   <h3 class="font-merriweather font-semibold text-[#003E7B] text-lg mt-4">Single Payment</h3>
                 </div>
                 <div class="absolute top-1 left-5  w-[185px] h-[216px]">
-                  <img class=" z-20" src="/assets/fee-options-bg.svg">
+                  <img class=" z-20" src="./assets/fee-options-bg.svg">
                 </div>
             </div>
             </div>
-            <div class="h-24 w-24 mt-8">
+            <div class="h-24 w-24 ml-20 md:ml-0 mt-20 md:mt-8">
               <div class="relative w-56 h-[158px] mx-auto">
                 <div class="absolute w-56 left-1 top-3 text-center">
                   <h4 class="font-merriweather font-light">Pay in easy installments</h4>
@@ -319,7 +276,7 @@
                   <h3 class="font-merriweather font-semibold text-[#003E7B] text-lg mt-4">Single Payment</h3>
                 </div>
                 <div class="absolute top-1 left-5  w-[185px] h-[216px]">
-                  <img class=" z-20" src="/assets/fee-options-bg.svg">
+                  <img class=" z-20" src="./assets/fee-options-bg.svg">
                 </div>
             </div>
             </div>
@@ -332,24 +289,24 @@
           <div class=" lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-52 mt-4">
             <div class="h-24 w-24 mt-8">
               <div class="relative w-[330px] h-[158px] mx-auto">
-                <div class="absolute left-1 top-3 text-center">
+                <div class="absolute left-1 top-3 text-center z-10">
                   <h2 class="font-clash font-bold text-4xl mt-3">June 5th 2023</h2>
-                  <button class="font-clash rounded-full font-normal text-white text-center md:text-base bg-[#317FEB] w-80 h-11 mt-8 z-40 tracking-widest">Register Now</button>
+                  <button class="font-clash rounded-full font-normal text-white text-center md:text-base bg-[#317FEB] ml-10 md:ml-0 w-64 md:w-80 h-11 mt-8 z-20 tracking-widest">Register Now</button>
                 </div>
                 <div class="absolute top-1 left-20  w-[185px] h-[216px]">
-                  <img class="bottom-3" src="/assets/fee-options-bg.svg">
+                  <img class="bottom-3" src="./assets/fee-options-bg.svg">
                 </div>
                 <div class="absolute top-[141px] left-0 w-full h-11 bg-[#F5F5F5]"></div>
             </div>
             </div>
-            <div class="h-24 w-24 mt-8">
+            <div class="h-24 w-24 mt-20 md:mt-8">
               <div class="relative w-[330px] h-[158px] mx-auto">
-                <div class="absolute left-1 top-3 text-center">
+                <div class="absolute left-1 top-3 text-center z-10">
                   <h2 class="font-clash font-bold text-4xl mt-3">Sep 4th 2023</h2>
-                  <button class="font-clash rounded-full font-normal text-white text-center md:text-base bg-[#317FEB] w-96 h-11 mt-8 tracking-widest">Block your seat now for 10% discount</button>
+                  <button class="font-clash rounded-full font-normal text-white text-center md:text-base bg-[#317FEB] md:w-96 h-11 mt-8 tracking-widest z-30">Block your seat now for 10% discount</button>
                 </div>
-                <div class="absolute top-1 left-[110px]  w-[185px] h-[216px]">
-                  <img src="/assets/fee-options-bg.svg">
+                <div class="absolute top-1 left-20 md:left-[110px]  w-[185px] h-[216px]">
+                  <img src="./assets/fee-options-bg.svg">
                 </div>
                 <div class="absolute top-[141px] left-0 w-full h-11 bg-[#F5F5F5]"></div>
             </div>
@@ -362,8 +319,8 @@
           <div class=" lg:w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-x-10 lg:gap-20 mt-4">
             <div class="relative h-56 w-56 mt-8">
               <div class="relative mx-auto">
-                <img class="absolute z-50" src="/assets/mentor-img.png">
-                <img class="absolute z-20" src="/assets/mentor-img-bg.svg">
+                <img class="absolute z-50" src="./assets/mentor-img.png">
+                <img class="absolute z-20" src="./assets/mentor-img-bg.svg">
             </div>
             </div>
             <div class="h-56 w-[470px] mt-8">
@@ -425,64 +382,7 @@
   </div>
   <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
 </section>
-      <script>
-        AOS.init()
-        let menuButton = document.querySelector("#menu-button")
-        let menuItems = document.querySelector("#menu-items")
-        let menu = document.querySelector(".menu")
-        let touchstartX
-        menuButton.addEventListener("mouseover",()=>{
-          if(window.innerWidth>768){
-            menuItems.classList.remove("hidden")
-            menuButton.classList.add("hidden")
-          }
-        })
-        menu.addEventListener("mouseleave",()=>{
-          if(window.innerWidth>768){
-            menuItems.classList.add("hidden")
-            menuButton.classList.remove("hidden")
-          }
-        })
-        menuButton.addEventListener("touchstart",(e)=>{
-          e.preventDefault()
-          if(window.innerWidth<=768){
-            if (touchstartX === undefined) {
-  touchstartX = e.touches[0].clientX;
-  menuItems.classList.remove("hidden");
-  menuButton.classList.add("hidden");
-} else {
-  touchstartX = undefined;
-  menuItems.classList.add("hidden");
-  menuButton.classList.remove("hidden");
-}
-          }
-        })
-
-        let activePage = document.querySelector('.active-page')
-            menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-
-            let blockSeatBox = document.querySelector('.wrapper')
-            let blockSeatButton = document.querySelector('.icon')
-            let bookSeatText = document.querySelector('.book-seat-text')
-            let bookSeatIcon = document.querySelector('.book-seat-icon')
-            blockSeatBox.addEventListener('mouseover',()=>{
-              blockSeatButton.style.width = '340px'
-              bookSeatText.classList.remove('hidden')
-              bookSeatText.style.right='215px'
-              bookSeatIcon.style.right = '470px'
-              blockSeatButton.style.zIndex = '5'
-            })
-            blockSeatBox.addEventListener('mouseleave',()=>{
-              blockSeatButton.style.width = ''
-              bookSeatText.classList.add('hidden')
-              bookSeatIcon.style.right = ''
-            })
-        </script>
+<script src="./js/main.js"></script>
+<script src="./js/academy.js"></script>
 </body>
 </html>
