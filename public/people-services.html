@@ -32,13 +32,13 @@
             <div class="h-[2px] w-9 bg-black mt-2 ml-24"></div>
         </div>
         <!-- menu white overlay for mobile -->
-        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-64 z-40 bg-white">
+        <div id="menu-overlay" class="hidden fixed top-0 left-0 w-screen h-72 z-40 bg-white">
           <button id="menu-close-button" class="absolute top-10 left-4 p-2 rounded-full bg-gray-200 text-white" onClick = 'menuCloseButton()'>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
           </button>
         </div>
           <div id="menu-items" class="hidden fixed top-[46px] justify-end z-40">
-            <div class="h-[2px] w-9 ml-[52px] bg-black"></div>
+            <div class="h-[2px] w-9 ml-[75px] bg-black"></div>
                         <ul class="text-black text-right font-light">
                           
                           <li class="mt-2"><a href="./index.html">Home</a></li>
@@ -46,10 +46,11 @@
                           <li><a href="./engineering.html">Engineering</a></li>
                           <li><a href="./design.html">Design</a></li>
                           <li><a href="./academy.html">Academy</a></li>
+                          <li><a href="./people-services.html">People Servies</a></li>
                           <li><a href="./portfolio.html">Portfolio</a></li>
                           <li class="mb-2"><a href="./contact.html">Contact</a></li>
                         </ul>
-                        <div class="h-[2px] w-9 top-[1700px] ml-[52px] bg-black"></div>
+                        <div class="h-[2px] w-9 top-[1700px] ml-[75px] bg-black"></div>
           </div>
         </nav>
       </header>
@@ -63,8 +64,8 @@
                 <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-100"> -->
                     <div class="relative flex flex-wrap w-full h-[550px] md:h-[620px]">
                       <div id="image" class=" relative w-[90%] md:w-[55%] h-[75%] lg:h-full">
-                          <img class="absolute" src="./assets/design_background_img.svg" alt="background_img" data-aos="zoom-out" data-aos-duration="1000">
-                          <img class="absolute left-8" src="./assets/design.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1000">
+                          <img class="absolute" src="./assets/people-services-images-back.svg" alt="background_img" data-aos="zoom-out" data-aos-duration="1000">
+                          <img class="absolute left-1 top-4" src="./assets/people-services.png" alt="puzzle" data-aos="zoom-in" data-aos-duration="1000">
                       </div>
                         <div class="text w-full md:w-[45%] h-1/3 md:h-full">
                             <div class="h-1/3 md:mt-28 2xl:mt-64 md:ml-11" data-aos="fade-left" data-aos-offset="50%" data-aos-duration="1200">
@@ -75,37 +76,10 @@
                         </div>
                       </div>
                   </div>
-                  <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-0">
-                    <div class="relative flex flex-wrap w-full h-[500px]">
-                        <div id="image" class="lg:w-1/2 h-2/3 lg:h-full w-[76%]">
-                            <img src="/assets/handshake_large.png" alt="handshake">
-                        </div>
-                        <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                            <div class="lg:h-1/3 mt-7 lg:mt-52 w-[440px]">
-                                <p class="font-light text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
-                                    Filling up the empty chairs in your office
-                                </p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item absolute transition-opacity duration-500 ease-in-out opacity-0">
-                    <div class="relative flex flex-wrap w-full h-[500px]">
-                        <div id="image" class="lg:w-1/2 h-2/3 lg:h-full w-[76%]">
-                            <img src="./assets/VR_large.png" alt="VR">
-                        </div>
-                        <div class="text w-full lg:w-1/2 h-1/3 lg:h-full">
-                            <div class="h-1/3 mt-7 lg:mt-52 w-[440px]">
-                                <p class="text-left text-3xl lg:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
-                                    Helping create better products, one app at a time
-                                </p>
-                            </div>
-                        </div>
-                      </div>
                   <!-- </div>
                 </div>
               </div> -->
-            </div>
+            
           </div>
           
 <!-- 
@@ -151,35 +125,56 @@
         </div>
             <!-- Section3 -->
       <section
-      class="relative z-50 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[1500px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+      class="relative z-50 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full bg-[#F1C40F] h-[700px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
     >
-    <div class="w-full mx-5 lg:mx-[250px]"><h1 class="text-2xl lg:text-5xl py-12 text-white font-clash font-bold">People Services</h1></div>
-    <div class=" absolute flex mx-5 lg:mx-[250px] w-full h-full py-[70px]">
-
-      <div id="part1" class="w-1/5" data-aos="fade-right" data-aos-duration="1000">
-        <span id="title" class="font-clash font-medium text-xl lg:text-3xl">Recruitment</span>
-          <p id="info" class="font-thin md:text-sm font-merriweather leading-9 pt-3">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
-          <button class="h-16 w-40 mt-4 border border-black rounded-full bg-transparent text-black font-clash font-medium text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
-      </div>
-        <div id="part2" class="relative w-1/4" data-aos="fade-up" data-aos-duration="1000">
-          <img id="service-background-img" class="absolute 2xl:left-20 md:top-16 h-80 w-80" src ="./assets/service-bg.svg" data-aos="fade-up">
-          <img id="service-front-img" class="absolute md:left-20 2xl:left-32 md:top-24 2xl:top-14 h-52 w-5h-52" src ="/assets/services-ux-design.png" data-aos="fade-up">
+    <div class="w-full mx-5 lg:mx-[210px]"><h1 class="text-2xl lg:text-5xl py-1 md:py-12 text-white font-clash font-bold">People Services</h1></div>
+    <div class=" absolute flex flex-wrap mx-5 lg:mx-[210px] md:w-full md:h-full md:py-[70px]">
+      <!-- mobile screen -->
+      <div class="slider w-full md:hidden relative overflow-hidden">
+        <div class="slider-container h-48 relative flex">
+          <!-- Content for smaller screens -->
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-ux-design.png" alt="Image 1">
+          </div>
+          <div class="slider-slide">
+            <img class="mx-auto h-36 w-36 mt-4" src="./assets/services-service-design.png" alt="Image 2">
+          </div>
         </div>
-        <div id="part3" class="w-1/5">
-          <div class="flex flex-col justify-center group transition duration-300">
-            <div class="cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-              <span class="title-info font-clash font-medium text-lg lg:text-xl">Recruitment</span>
-              <p class="hidden font-thin font-merriweather leading-7 md:leading-10">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+        <div>
+          <img class="mx-auto -mt-48  h-44 w-[180px]" src="./assets/service-bg.svg" alt="Image 1">
+        </div>
+        <div class="slider-navigation md:hidden"> <!-- Hidden on larger screens -->
+          <!-- HTML structure for larger screens -->
+          <svg class="slider-prev z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+          <svg class="slider-next z-40 w-11 h-11" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+          <!-- <button class="slider-next bg-red-400" onclick="nextSlide()">&#8594;</button> -->
+        </div>
+        </div>
+      <!-- larger screens -->
+      <div id="part1" class="w-full md:w-1/5 mt-8 md:mt-0" data-aos="fade-right" data-aos-duration="1000">
+        <span id="title" class="font-clash md:font-medium text-2xl">Recruitment</span>
+          <p id="info" class="font-thin text-sm font-merriweather leading-loose md:leading-relaxed pt-3">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
+          <button class="h-12 w-36 md:h-16 md:w-40 mt-4 border-0 md:border border-black rounded-full bg-[#317FEB] md:bg-transparent text-white md:text-black font-clash font-medium text-base tracking-widest md:text-xl hover:bg-[#317FEB] hover:text-white hover:border-0">Know More</button>
+      </div>
+        <div id="part2" class="relative hidden md:block w-1/4" data-aos="fade-up" data-aos-duration="1000">
+          <img id="service-background-img" class="absolute left-11 2xl:left-20 top-2 h-64 w-64" src ="./assets/service-bg.svg" data-aos="fade-up">
+          <img id="service-front-img" class="absolute top-4 left-[68px] h-52 w-52 2xl:left-32 2xl:top-14" src ="/assets/services-ux-design.png" data-aos="fade-up">
+        </div>
+        <div id="part3" class="hidden md:block w-1/5">
+          <div class="flex flex-col justify-center">
+            <div data-aos="fade-up-left" data-aos-duration="1000">
+              <span class="title-info cursor-pointer font-clash font-medium text-lg lg:text-xl">Recruitment</span>
+              <p class="hidden service-detail font-thin font-merriweather leading-7 md:leading-10">Partner with us at DigiMoksha to unlock the true potential of your digital products. Let us create user experiences that captivate, engage, and inspire, driving meaningful connections between your brand and your target audience.</p>
                   <p class="pp font-thin md:text-sm font-merriweather block">Swift, efficient and hassle free recruitment for high skilled specialists</p>
-                  <img class="hidden service-img" src="/assets/services-ux-design.png">
+                  <img class="hidden service-img top-4 left-[68px] h-52 w-52" src="/assets/services-ux-design.png">
                 </div>
           </div>
-          <div class="flex flex-col justify-center group transition duration-300 text-black">
-          <div class="pt-3 cursor-pointer transition duration-300 group-hover:-translate-x-7" data-aos="fade-up-left" data-aos-duration="1000">
-            <span class="title-info font-clash font-medium text-lg md:text-xl">Augmentation</span>
-            <p class="hidden font-thin font-merriweather">Unlock the power of exceptional service experiences with our service design expertise. Our team of experts seamlessly blends strategy, innovation, and user-centric thinking to create services that delight customers and drive business growth. From mapping customer journeys to designing intuitive interfaces, we transform your vision into tangible, memorable experiences that set you apart in today's competitive landscape.</p>
+          <div class="flex flex-col justify-center text-black">
+          <div class="pt-3" data-aos="fade-up-left" data-aos-duration="1000">
+            <span class="title-info cursor-pointer font-clash font-medium text-lg md:text-xl">Augmentation</span>
+            <p class="hidden service-detail font-thin font-merriweather">Unlock the power of exceptional service experiences with our service design expertise. Our team of experts seamlessly blends strategy, innovation, and user-centric thinking to create services that delight customers and drive business growth. From mapping customer journeys to designing intuitive interfaces, we transform your vision into tangible, memorable experiences that set you apart in today's competitive landscape.</p>
               <p class="font-thin md:text-sm font-merriweather">An extensive pool of skilled professionals ready to join at short notice</p>
-              <img class="hidden service-img" src="/assets/services-service-design.png">
+              <img class="hidden service-img top-4 left-[68px] h-52 w-52" src="/assets/services-service-design.png">
             </div>
           </div>
         </div>
@@ -235,79 +230,7 @@
     
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
-          <script>
-          AOS.init()
-          let menuButton = document.querySelector("#menu-button")
-            let menuItems = document.querySelector("#menu-items")
-            let menu = document.querySelector(".menu")
-            const menuBackground = document.getElementById('menu-overlay')
-            let touchstartX
-            menuButton.addEventListener("mouseover",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.remove("hidden")
-                menuButton.classList.add("hidden")
-              }
-            })
-            menu.addEventListener("mouseleave",()=>{
-              if(window.innerWidth>768){
-                menuItems.classList.add("hidden")
-                menuButton.classList.remove("hidden")
-              }
-            })
-            menuButton.addEventListener("touchstart",(e)=>{
-              e.preventDefault()
-              if(window.innerWidth<=768){
-                if (touchstartX === undefined) {
-      touchstartX = e.touches[0].clientX;
-      menuItems.classList.remove("hidden");
-      menuButton.classList.add("hidden");
-      menuBackground.classList.remove("hidden");
-    } else {
-      touchstartX = undefined;
-      menuItems.classList.add("hidden");
-      menuButton.classList.remove("hidden");
-    }
-              }
-            })
-       
-              //close menu overlay with items
-        const menuCloseButton = ()=>{
-  menuBackground.classList.add('hidden')
-  menuItems.classList.add('hidden')
-  menuButton.classList.remove('hidden')
- }
-
-              let activePage = document.querySelector('.active-page')
-            menuItems.addEventListener('click', (event)=>{
-              if(event.target.tagName == 'A'){
-                activePage.classList.remove('hidden')
-              activePage.textContent = event.target.nextElementSibling.textContent
-              console.log(activePage.textContent)
-              }
-            })
-          const el= document.querySelector("#part3")
-    const title = document.querySelector('#title');
-    const info = document.querySelector('#info');
-    const serviceFrontImage = document.querySelector('#service-front-img');
-    el.addEventListener('click',(event)=>{
-        if(event.target.classList.contains("title-info")){
-            // const text = event.target.querySelector("span").textContent
-            // console.log(text)
-             title.textContent = event.target.textContent
-             info.textContent = event.target.nextElementSibling.textContent
-             console.log(info.textContent)
-             let image = event.target.parentElement.querySelector('.service-img')
-             let imgSource = image.getAttribute('src')
-             serviceFrontImage.src =  imgSource
-        }else if (event.target.parentElement.classList.contains('title-info')) {
-            title.textContent = event.target.parentElement.textContent;
-            info.textContent = event.target.nextElementSibling?event.target.nextElementSibling.textContent:'';
-          }
-        
-       
-        // document.getElementById("title").innerHTML = text
-        //document.getElementById("info").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    })
-          </script>
+  <script src="./js/main.js"></script>   
+    <script src="./js/services.js"></script>
 </body>
 </html>
