@@ -7,26 +7,35 @@ const info = document.querySelector('#info');
 const serviceFrontImage = document.querySelector('#service-front-img');
 //const service = document.querySelector('#service');
 //const t = document.querySelectorAll('.service');
-let preiviouslyClickedBlock = null
+let previouslyClickedBlock = null
 let previouslyClickedServiceTitle = null
+let previouslyClickedServiceBlockBullet = null
 el.addEventListener('click',(event)=>{
     if(event.target.classList.contains("title-info")){
         // const text = event.target.querySelector("span").textContent
         // console.log(text)
-        if(preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!==null){
-      preiviouslyClickedBlock.style.transform = ''
+        
+        //console.log(bullet)
+        if(previouslyClickedBlock !== null && previouslyClickedServiceTitle!==null&&previouslyClickedServiceBlockBullet!==null){
+      previouslyClickedBlock.style.transform = ''
       previouslyClickedServiceTitle.style.color = ''
-      previouslyClickedServiceTitle.classList.remove('white-bullet')
+      previouslyClickedServiceBlockBullet.classList.add('hidden')
+      // previouslyClickedBlock.classList.remove('white-bullet')
+      //bullet.classList.add('hidden')
         }
         event.target.parentElement.style.transform = 'translateX(-28px)'
-        event.target.parentElement.style.transform = 'translateX(-28px)'
+        let bullet = event.target.parentElement.querySelector('.service-bullet')
+        bullet.classList.remove('hidden')
+        //event.target.parentElement.style.transform = 'translateX(-28px)'
         // event.target.style.transform = 'translateX(-28px)'
         // event.target.nextElementSibling.style.transform = 'translateX(20px)'
         console.log(event.target.parentElement)
         event.target.style.color = '#317FEB'
-        event.target.classList.add('white-bullet')
-        preiviouslyClickedBlock = event.target.parentElement
+        // event.target.classList.add('white-bullet')
+        bullet.classList.remove('hidden')
+        previouslyClickedBlock = event.target.parentElement
         previouslyClickedServiceTitle = event.target
+        previouslyClickedServiceBlockBullet = bullet
          title.textContent = event.target.textContent
          info.textContent = event.target.nextElementSibling.textContent
          let image = event.target.parentElement.querySelector('.service-img')
@@ -91,11 +100,12 @@ info.textContent = serviceDetail[slideIndex].textContent
 });
 
 window.addEventListener("scroll", ()=> {
-if (preiviouslyClickedBlock !== null && previouslyClickedServiceTitle!== null) {
+if (previouslyClickedBlock !== null && previouslyClickedServiceTitle!== null && previouslyClickedServiceBlockBullet !== null) {
   //resetPosition(prevClickedDiv);
-  preiviouslyClickedBlock.style.transform = ''
+  previouslyClickedBlock.style.transform = ''
   previouslyClickedServiceTitle.style.color = ''
-  previouslyClickedServiceTitle.classList.remove('white-bullet')
+  //previouslyClickedServiceTitle.classList.remove('white-bullet')
+  previouslyClickedServiceBlockBullet.classList.add('hidden')
 }
 });   
 
