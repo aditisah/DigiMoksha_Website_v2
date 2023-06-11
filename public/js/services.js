@@ -19,7 +19,9 @@ el.addEventListener('click',(event)=>{
       previouslyClickedServiceTitle.classList.remove('white-bullet')
         }
         event.target.parentElement.style.transform = 'translateX(-28px)'
-         
+        event.target.parentElement.style.transform = 'translateX(-28px)'
+        // event.target.style.transform = 'translateX(-28px)'
+        // event.target.nextElementSibling.style.transform = 'translateX(20px)'
         console.log(event.target.parentElement)
         event.target.style.color = '#317FEB'
         event.target.classList.add('white-bullet')

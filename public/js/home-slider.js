@@ -7,17 +7,37 @@ btnContainers.forEach((btnContainer) => {
   let buttonText = btnContainer.querySelector('.btn-text');
 
   btnContainer.addEventListener('mouseover', () => {
-    knowMoreButton.classList.add('w-44');
+    // if(window.innerWidth>=1920){
+    //   knowMoreButton.classList.add('w-56')
+      
+    // }else{
+      knowMoreButton.classList.add('w-44');
+      knowMoreButton.classList.add('h-16');
+      knowMoreButton.classList.add('-top-2');
+    //}
+    
     knowMoreButton.classList.add('bg-[#317FEB]');
     arrow.style.left = '138px';
+    arrow.style.top = '12px';
+    
     arrow.classList.add('text-white');
     buttonText.classList.remove('hidden');
   });
 
   btnContainer.addEventListener('mouseleave', () => {
-    knowMoreButton.classList.remove('w-44');
+    // if(window.innerWidth>=1920){
+    //   knowMoreButton.classList.remove('w-56');
+    // knowMoreButton.classList.remove('h-16');
+    // knowMoreButton.classList.remove('-top-2');
+    // }else{
+      knowMoreButton.classList.remove('w-44');
+      knowMoreButton.classList.remove('h-16');
+      knowMoreButton.classList.remove('-top-2');
+
+    //}
     knowMoreButton.classList.remove('bg-[#317FEB]');
     arrow.style.left = '';
+    arrow.style.top = '';
     arrow.classList.remove('text-white');
     buttonText.classList.add('hidden');
   });

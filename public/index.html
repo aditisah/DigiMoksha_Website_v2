@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="./js/main.js" type="module"></script>
-    <script src="./js/home-slider.js" type="module"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
@@ -19,7 +17,7 @@
 </head>
 <body class="bg-[#F5F5F5]">
   <div class="relative">
-  <div class="absolute left-0 right-0 bottom-[410px] -top-[120px] bg-[url('./assets/home-background.webp')] bg-center bg-no-repeat bg-[length:700px_750px] md:bg-[length:1700px_1650px] 2xl:bg-[length:2170px_1700px]">
+  <div class="absolute left-0 right-0 bottom-[410px] -top-32 md:-top-[98rem] lg:-top-[76rem] 2xl:-top-[110rem] bg-[url('./assets/home-background.webp')] bg-center bg-no-repeat bg-[length:700px_800px] md:bg-[length:1200px_950px] lg:bg-[length:1700px_1650px] 2xl:bg-[length:2330px_2500px]">
     <div class="md:h-[800px]"></div>
   </div>
   <header class="flex justify-between items-center px-4 py-8 mx-5 lg:mx-[210px] bg-white-500">
@@ -81,22 +79,22 @@
             
         </header>  -->
         <!-- Section1 -->
-        <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[690px] md:h-[550px] lg:h-[760px] overflow-hidden overflow-x-hidden">
-            <div class="relative h-[300px] lg:h-[600px]">
+        <section class="relative z-10 py-1 lg:py-1 xl:py-1 2xl:py-1 mx-5 lg:mx-40 h-[calc(100vh-250px)] md:h-[70vh] 2xl:h-[75vh] overflow-hidden overflow-x-hidden">
+            <div class="relative">
               <div class="lg:w-full flex flex-wrap items-center justify-center">
                 <div class="w-full h-full mx-auto">
-                  <div class="carousel relative">
-                    <div class="carousel-inner">
-                      <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-100">
-                          <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div class="relative w-full md:w-1/2 lg:w-[40%] h-[71%] lg:h-full lg:ml-32">
+                  <div class="carousel relative h-full">
+                    <div class="carousel-inner h-full">
+                      <div class="carousel-item absolute w-full h-full transition-opacity duration-500 ease-in-out opacity-100">
+                          <div class="relative flex flex-wrap w-full h-[32rem] lg:h-[28rem]">
+                            <div class="relative w-[80%] h-auto md:w-1/2 lg:w-[40%] lg:h-full mx-auto lg:ml-32">
                                 <!-- <img src="/assets/puzzle.png" alt="puzzle"> -->
                                 <img class="img1 absolute img1-zoom-out z-0" src="./assets/home-design-bg.svg" alt="background_img">
                             <img class="img2 absolute img2-zoom-in top-9 z-10" src="./assets/home-design.png" alt="puzzle" loading="lazy">
                             </div>
-                            <div class="text relative w-full md:w-[40%] h-1/3 lg:h-full">
-                                <div class="absolute h-1/3 mt-7 md:mt-32 lg:mt-40 lg:ml-8 animate-slide-left overflow-wrap">
-                                    <p class="font-light text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                            <div class="text relative w-full md:w-[40%] 2xl:w-[47%] h-1/3 lg:h-full">
+                                <div class="absolute h-1/3 2xl:w-[80%] mt-32 md:mt-32 lg:mt-28 2xl:mt-40 lg:ml-8 2xl:ml-0 animate-slide-left overflow-wrap">
+                                    <p class="font-normal text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl 2xl:leading-snug pt-0 font-clash" style="color:#9FCC3B;">
                                         Using Design to solve complex business problems
                                     </p>
                                 </div>
@@ -104,14 +102,14 @@
                           </div>
                       </div>
                       <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
-                        <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div class="relative w-full md:w-1/2 lg:w-[40%] h-[71%] lg:h-full lg:ml-32">
-                              <img class="img1 absolute h-[110%] z-0" src="./assets/engineering-image-back.svg" alt="background_img">
-                              <img class="img2 absolute top-10 z-10" src="./assets/engineering-image.png" alt="puzzle">
+                        <div class="relative flex flex-wrap w-full h-[20rem] 2xl:h-[38rem]">
+                            <div class="relative w-[80%] h-auto md:w-1/2 lg:w-[40%] lg:h-full mx-auto lg:ml-32">
+                              <img class="img1 absolute md:h-[110%] top-2 md:top-0 left-2 md:left-0 z-0" src="./assets/engineering-image-back.svg" alt="background_img">
+                              <img class="img2 absolute top-2 md:top-10 2xl:top-6 z-10" src="./assets/engineering-image.png" alt="puzzle">
                             </div>
-                            <div class="text w-full md:w-[40%] h-1/3 lg:h-full">
-                                <div class="lg:h-1/3 mt-7 md:mt-32 lg:mt-40 lg:ml-8 overflow-wrap">
-                                    <p class="font-light text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                            <div class="text relative w-full md:w-[40%] 2xl:w-[47%] h-1/3 lg:h-full">
+                                <div class="absolute lg:h-1/3 2xl:w-[60%] mt-48 md:mt-32 lg:mt-28 2xl:mt-40 lg:ml-8 2xl:ml-0 overflow-wrap">
+                                    <p class="font-normal text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl 2xl:leading-snug pt-0 font-clash" style="color:#9FCC3B;">
                                       At the forefront of Digital Revolution
                                     </p>
                                 </div>
@@ -120,13 +118,13 @@
                       </div>
                       <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
                         <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div class="relative w-full md:w-1/2 lg:w-[40%] h-[71%] lg:h-full lg:ml-32">
-                              <img class="img1 absolute lg:h-[70%] z-0" src="./assets/academy_back.svg" alt="background_img">
+                            <div class="relative w-[80%] h-auto md:w-1/2 lg:w-[40%] lg:h-full mx-auto lg:ml-32">
+                              <img class="img1 absolute lg:h-[70%] 2xl:h-full z-0" src="./assets/academy_back.svg" alt="background_img">
                               <img class="img2 absolute z-10" src="./assets/academy.png" alt="puzzle">
                             </div>
-                            <div class="text w-full md:w-[40%] h-1/3 lg:h-full">
-                                <div class="h-1/3 mt-7 md:mt-32 lg:mt-40 lg:ml-8 overflow-wrap">
-                                    <p class="font-light text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                            <div class="text w-full md:w-[40%] 2xl:w-[47%] h-1/3 lg:h-full">
+                                <div class="h-1/3 2xl:w-[60%] mt-32 md:mt-32 lg:mt-28 2xl:mt-40 lg:ml-8 overflow-wrap">
+                                    <p class="font-normal text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl 2xl:leading-snug pt-0 font-clash" style="color:#9FCC3B;">
                                       Get Ready for a lucrative career in User Experience Design
                                     </p>
                                 </div>
@@ -135,13 +133,13 @@
                       </div>
                       <div class="carousel-item absolute w-full transition-opacity duration-500 ease-in-out opacity-0">
                         <div class="relative flex flex-wrap w-full h-[500px]">
-                            <div class="relative w-full md:w-1/2 lg:w-[40%] h-[71%] lg:h-full lg:ml-32">
+                            <div class="relative w-[80%] h-auto md:w-1/2 lg:w-[40%] lg:h-full mx-auto lg:ml-32">
                               <img class="img1 absolute z-0" src="./assets/people-services-images-back.svg" alt="background_img">
                               <img class="img2 absolute z-10" src="./assets/people-services.png" alt="puzzle">
                             </div>
-                            <div class="text w-full md:w-[40%] h-1/3 lg:h-full">
-                                <div class="h-1/3 mt-7 md:mt-32 lg:mt-40 lg:ml-8 overflow-wrap">
-                                    <p class="font-light text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl pt-0 font-clash" style="color:#9FCC3B;">
+                            <div class="text w-full md:w-[40%] 2xl:w-[47%] h-1/3 lg:h-full">
+                                <div class="h-1/3 2xl:w-[70%] mt-32 md:mt-32 lg:mt-28 2xl:mt-40 lg:ml-8 overflow-wrap">
+                                    <p class="font-normal text-center lg:text-left text-3xl md:text-4xl 2xl:text-5xl 2xl:leading-snug pt-0 font-clash" style="color:#9FCC3B;">
                                       Connecting Right Skills to the Right Opportunity
                                     </p>
                                 </div>
@@ -154,8 +152,8 @@
               </div>
               
 
-              <div id="small-images" class="flex justify-center space-x-6 lg:w-full mt-[540px] md:mt-[410px] lg:mt-[570px]">
-                <div class="small-img relative  opacity-100 h-20">
+              <div id="small-images" class="flex justify-center space-x-6 2xl:space-x-8 h-32 lg:w-full mt-[26rem] md:mt-[21rem] lg:mt-[27rem] 2xl:mt-[40rem]">
+                <div class="small-img relative  opacity-100">
                     <img class="absolute h-14 top-2 z-20" src="./assets/home-design-small.png" alt="puzzle">
                     <img class=" h-16 z-0 top-1" src="./assets/home-design-bg-small.svg" alt="puzzle">
                 </div>
@@ -175,46 +173,38 @@
             </div>
           </section>
           <!-- Section2 -->
-          <section class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[210px] h-[400px] md:h-[380px] overflow-hidden overflow-x-hidden">
+          <section class="relative z-10 mt-2 py-4 lg:py-4 xl:py-4 2xl:py-4 mx-5 lg:mx-[210px] max-h-screen overflow-hidden overflow-x-hidden">
             <div class="relative flex flex-wrap items-start">
-              
-              <div
-                class="relative w-full h-full z-10 mt-5 md:mt-0 text-center"
-                data-aos="fade-left"
-                data-aos-duration="600"
-              >
-              <div class="lg:w-[1220px] 2xl:w-[1300px] lg:mt-4">
+              <div class="w-[92%] mt-8 lg:mt-4">
                 <span
-                  class="text-3xl lg:text-6xl font-extrabold block text-left text-[#9FCC3B] font-clash"
-                  >Your partner in your digital transformation journey</span
+                  class="text-3xl lg:text-6xl 2xl:text-8xl font-extrabold block text-left text-[#9FCC3B] font-clash lg:leading-tight 2xl:leading-tight"
+                  >Your partner in your digital Transformation journey</span
                 >
                 </div>
                 <!-- <p class="font-m text-left pt-4">
                     Your partner is digital transformation, design and people solutions.
                 </p> -->
-                <div class="md:mr-56 leading-loose">
-                <p class="font-light text-base 2xl:text-2xl font-merriweather text-left mt-4">Fueling business growth and driviing digital transformation through the power of cutting-edge technology. With a focus on delivering delightful user experiences, we craft innovative solutions that captivate customers and boost engagement. We excel in connecting the right people to the right jobs, creating synergistic partnerships that drive success for individuals and businesses alike. Step into the future of growth and opportunity with our transformative services.</p>
+                <div class="md:w-[75%]">
+                <p class="font-light text-sm 2xl:text-2xl font-merriweather text-left mt-4 leading-normal lg:leading-relaxed 2xl:leading-relaxed tracking-wide">Fueling business growth and driviing digital transformation through the power of cutting-edge technology. With a focus on delivering delightful user experiences, we craft innovative solutions that captivate customers and boost engagement. We excel in connecting the right people to the right jobs, creating synergistic partnerships that drive success for individuals and businesses alike. Step into the future of growth and opportunity with our transformative services.</p>
               </div>
               </div>
-              </div>
-            </div>
           </section>
           <!-- Section3 -->
           <section
-          class="relative z-10 py-4 lg:py-4 xl:py-4 2xl:py-4 px-full mx-5 lg:mx-[210px] h-[1720px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
+          class="relative z-10 py-4 lg:py-8 px-full mx-5 lg:mx-[210px] h-[1720px] md:h-[1300px] lg:h-[900px] overflow-hidden overflow-x-hidden"
         >
         <div>
           <h1 class="font-clash text-[#9FCC3B] text-2xl md:text-4xl font-bold">How we help our clients?</h1>
         </div>
         <div class="flex flex-wrap justify-around h-[600px] md:mt-14">
-          <div class="w-72">
+          <div class="w-72 2xl:w-96">
             <div class="relative">
-              <img class="absolute top-2 left-5 z-10 h-72 w-60 mx-auto" src="./assets/home-service-design.png">
+              <img class="absolute -top-2 2xl:-top-9 left-7 2xl:left-8 z-10 h-auto w-60 2xl:w-[88%] 2xl:h-auto mx-auto" src="./assets/home-service-design.png">
               <img class="absolute z-0 top-3" src="./assets/home-service-design-bg.svg">
              </div>
-            <div class="mt-[320px]">
+            <div class="mt-80 2xl:mt-96">
               <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Our service design advisory helps you stay relevant</h3>
-              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose 2xl:leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
             </div>
             <!-- <div class="h-10 w-10 rounded-full bg-white text-center my-auto font-thin hover:w-28 hover:bg-blue">></div> -->
             <!-- <div class="relative bg-blue-500 rounded-full py-2 px-4 flex items-center justify-between overflow-hidden transition duration-300 ease-in-out h-12 w-12 hover:w-24">
@@ -233,30 +223,31 @@
             <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
           </div>
           </div>
-          <div class="relative w-72">
+          <div class="relative w-72 2xl:w-96">
             <div>
-              <img class="h-64 w-64 mx-auto absolute top-7 z-10" src="./assets/home-workshop.png">
+              <img class="h-64 w-64 2xl:w-full 2xl:h-auto mx-auto absolute top-7 z-10" src="./assets/home-workshop.png">
               <img class="absolute z-0 top-4" src="./assets/home-workshop-bg.svg">
             </div>
-            <div class="mt-[320px]">
+            <div class="mt-80 2xl:mt-96">
               <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Enabling innovation through our Design Thinking Workshop</h3>
-              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">Design Thinking helps you solve problems in a systematic step-by-step manner to create better products predictably and efficiently.</p>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose 2xl:leading-loose mt-3">Design Thinking helps you solve problems in a systematic step-by-step manner to create better products predictably and efficiently.</p>
             </div>
             <div class="know-more-btn-container relative w-16 h-16 mt-3">
               <div class="rounded-btn absolute w-12 h-12 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div>
               <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
             </div>
           </div>
-          <div class="relative w-72">
+          <div class="relative w-72 2xl:w-96">
             <div class="relative">
               <img class="absolute top-9 z-10" src="./assets/home-user-exp.png">
               <img class="absolute z-0 left-2" src="./assets/home-user-exp-bg.svg">
             </div>
-            <div class="mt-[320px]">
+            <div class="mt-80 2xl:mt-96">
               <h3 class="font-clash text-lg 2xl:text-2xl leading-snug font-medium">Delightful User Eexperiences for that are Predictable, Measurable, and Repeatable</h3>
-              <p class="font-merriweather 2xl:text-xl font-light leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
+              <p class="font-merriweather 2xl:text-xl font-light leading-loose 2xl:leading-loose mt-3">We help you solve your client's problems most efficiently.</p>
             </div>
             <div class="know-more-btn-container relative w-16 h-16 mt-3">
+              <!-- <div class="rounded-btn absolute w-12 2xl:w-16 h-12 2xl:h-16 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div> -->
               <div class="rounded-btn absolute w-12 h-12 rounded-full bg-white  transition-all hover:duration-700 ease-in-out"><span class="arrow absolute top-0.5 left-4 font-thin text-4xl">></span></div>
               <div class="btn-text absolute hidden w-28 top-3 left-5 text-white tracking-widest">Know More</div>
             </div>
@@ -270,7 +261,7 @@
     <section
       class="relative z-10 pt-4 lg:py-4 xl:py-4 2xl:py-4 lg:h-[400px] bg-black overflow-hidden overflow-x-hidden"
     >
-    <div class="flex flex-wrap h-[90%] lg:w-full mx-5 lg:mx-[250px] py-6">
+    <div class="flex flex-wrap h-[90%] lg:w-full mx-5 lg:mx-[210px] py-6">
       <div class="w-[70%] lg:w-1/4">
         <div class="lg:mt-14">
           <span class="font-merriweather font-medium text-2xl lg:text-3xl text-white">Sales Team</span>
@@ -285,7 +276,7 @@
           <span class="font-thin font-montserrat text-sm text-white block">careers@digimoksha.com</span>
         </div>
       </div>
-      <div class="w-1/4 lg:w-1/12 lg:ml-20">
+      <!-- <div class="w-1/4 lg:w-1/12 lg:ml-20">
         <h3 class="font-merriweather font-medium text-xl lg:text-2xl lg:mt-14 text-white">Services</h3>
         <span class="font-montserrat text-sm mt-4 text-white block">Lorem Ipsum</span>
         <span class="font-montserrat text-sm mt-2 text-white block">Dolor sit amet</span>
@@ -293,52 +284,29 @@
         <span class="font-montserrat text-sm mt-2 text-white block">Ut labore et</span>
         <span class="font-montserrat text-sm mt-2 text-white block">Adipiscing elit</span>
         <span class="font-montserrat text-sm mt-2 text-white block">Adipiscing elit</span>
+      </div> -->
+      <div class="w-[70%] lg:w-1/12 lg:ml-32 2xl:ml-64">
+        <h3 class="font-merriweather font-medium text-base lg:text-xl mt-14 lg:mt-14 text-white">Services</h3>
+        <span class="font-montserrat text-sm mt-4 text-white block">Engineering Services</span>
+        <span class="font-montserrat text-sm mt-2 text-white block">UX Design Services</span>
+        <span class="font-montserrat text-sm mt-2 text-white block">People Services</span>
+        <span class="font-montserrat text-sm mt-2 text-white block">UX Academy</span>
       </div>
-      <div class="w-[70%] lg:w-1/12 lg:ml-10">
-        <h3 class="font-merriweather font-medium text-xl lg:text-2xl mt-14 lg:mt-14 text-white">Industries</h3>
-        <span class="font-montserrat text-sm mt-4 text-white block">Sed doeuismod</span>
-        <span class="font-montserrat text-sm mt-2 text-white block">Dolor sit amet</span>
-        <span class="font-montserrat text-sm mt-2 text-white block">Ut labore et</span>
-        <span class="font-montserrat text-sm mt-2 text-white block">Adipiscing elit</span>
-        <span class="font-montserrat text-sm mt-2 text-white block">Lorem Ipsum</span>
-      </div>
-      <div class="w-1/4 lg:w-1/12  lg:ml-10">
-        <h3 class="font-merriweather font-medium text-xl lg:text-2xl mt-14 text-white">Solutions</h3>
-        <span class="font-montserrat text-sm text-white block mt-4">Lorem Ipsum</span>
+      <div class="w-1/4 lg:w-1/12 lg:ml-14">
+        <h3 class="font-merriweather font-medium text-base lg:text-xl mt-14 text-white">About Us</h3>
+        <!-- <span class="font-montserrat text-sm text-white block mt-4">Lorem Ipsum</span>
         <span class="font-montserrat text-sm text-white block mt-2">Dolor sit amet</span>
         <span class="font-montserrat text-sm text-white block mt-2">Consectetur</span>
         <span class="font-montserrat text-sm text-white block mt-2">Adipiscing elit</span>
-        <span class="font-montserrat text-sm text-white block mt-2">Ut labore et</span>
+        <span class="font-montserrat text-sm text-white block mt-2">Ut labore et</span> -->
+        <h3 class="font-merriweather font-medium text-base lg:text-xl mt-4 text-white">Contact Us</h3>
       </div>
       
     </div>
     
     <div class="h-[10%] w-full mx-auto text-center"><span class="font-thin font-montserrat text-sm lg:mr-1 mt-1 w-12 lg:w-0 text-white">&#xA9; 2021 All rights reserved.</span></div>
   </section>
-  <script>
-         //rounded button
-//  let btnContainer = document.querySelector('.know-more-btn-container')
-//             let knowMoreButton = btnContainer.querySelector('.rounded-btn')
-//             let arrow = btnContainer.querySelector('.arrow')
-//             let buttonText = btnContainer.querySelector('.btn-text')
-           
-//             btnContainer.addEventListener('mouseover',(event)=>{
-//               event.target.classList.add('w-44')
-//               knowMoreButton.classList.add('bg-[#317FEB]')
-//               arrow.style.left= '138px'
-//               arrow.classList.add('text-white')
-//               buttonText.classList.remove('hidden')
-//             })
-//             btnContainer.addEventListener('mouseleave',()=>{
-//               knowMoreButton.classList.remove('w-44')
-//               knowMoreButton.classList.remove('bg-[#317FEB]')
-//               arrow.style.left= ''
-//               arrow.classList.remove('text-white')
-//               buttonText.classList.add('hidden')
-//             })
-
-
-</script>
-        
+  <script src="./js/main.js" type="module"></script>
+<script src="./js/home-slider.js" type="module"></script>
 </body>
 </html>
