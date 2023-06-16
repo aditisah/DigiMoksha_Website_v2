@@ -12,7 +12,7 @@ module.exports = {
         'custom-green': '#9FCC3B'
       },
       fontWeight: {
-        custom: 1200
+        'bold': 520
       }
     },
   },
