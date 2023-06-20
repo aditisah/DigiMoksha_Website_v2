@@ -10,12 +10,22 @@ const serviceFrontImage = document.querySelector('#service-front-img');
 let previouslyClickedBlock = null
 let previouslyClickedServiceTitle = null
 let previouslyClickedServiceBlockBullet = null
+const firstTitle = document.querySelector('.title-info')
+let firstTitleBullet = document.querySelector('.service-bullet')
+const firstServiceBlock = document.querySelector('.first-service-block')
+window.addEventListener('load', ()=>{
+  console.log(firstTitle)
+firstTitle.style.color = '#317FEB'
+firstTitleBullet.classList.remove('hidden')
+firstServiceBlock.style.transform = 'translateX(-28px)'
+})
 el.addEventListener('click',(event)=>{
     if(event.target.classList.contains("title-info")){
-        // const text = event.target.querySelector("span").textContent
-        // console.log(text)
-        
-        //console.log(bullet)
+        if(firstServiceBlock !== null && firstTitle !== null && firstTitleBullet !== null){
+          firstServiceBlock.style.transform = ''
+      firstTitle.style.color = ''
+      firstTitleBullet.classList.add('hidden')
+        }
         if(previouslyClickedBlock !== null && previouslyClickedServiceTitle!==null&&previouslyClickedServiceBlockBullet!==null){
       previouslyClickedBlock.style.transform = ''
       previouslyClickedServiceTitle.style.color = ''
@@ -29,7 +39,7 @@ el.addEventListener('click',(event)=>{
         //event.target.parentElement.style.transform = 'translateX(-28px)'
         // event.target.style.transform = 'translateX(-28px)'
         // event.target.nextElementSibling.style.transform = 'translateX(20px)'
-        console.log(event.target.parentElement)
+        
         event.target.style.color = '#317FEB'
         // event.target.classList.add('white-bullet')
         bullet.classList.remove('hidden')
