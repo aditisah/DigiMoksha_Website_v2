@@ -4,19 +4,30 @@ document.addEventListener("DOMContentLoaded", ()=> {
           let menuItems = document.querySelector("#menu-items")
           let menu = document.querySelector(".menu")
           let touchstartX
+          const menuBackgroundForLargerScreen = document.getElementById('menu-overlay-larger-screen')
+          const listItems = document.getElementsByTagName('li')
+          const listItemsArray = [...listItems]
           menuButton.addEventListener("mouseover",()=>{
             if(window.innerWidth>768){
               menuItems.classList.remove("hidden")
               menuButton.classList.add("hidden")
+              menuBackgroundForLargerScreen.classList.remove('hidden')
+              console.log(listItems)
+              listItemsArray.forEach(listItem =>{
+                console.log(listItem)
+                listItem.style.color = '#9FCC3B'
+              })
+              
             }
           })
           menu.addEventListener("mouseleave",()=>{
             if(window.innerWidth>768){
               menuItems.classList.add("hidden")
               menuButton.classList.remove("hidden")
+              menuBackgroundForLargerScreen.classList.add('hidden')
             }
           })
-          const menuBackground = document.getElementById('menu-overlay')
+          
     //       menuButton.addEventListener('click', ()=>{
     //         menuItems.classList.remove("hidden");
     //  menuButton.classList.add("hidden");
