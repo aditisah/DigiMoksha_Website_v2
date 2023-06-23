@@ -7,13 +7,28 @@ document.addEventListener("DOMContentLoaded", ()=> {
           const menuBackgroundForLargerScreen = document.getElementById('menu-overlay-larger-screen')
           const listItems = document.getElementsByTagName('li')
           const listItemsArray = [...listItems]
-          menuButton.addEventListener("mouseover",(event)=>{
+          menuButton.addEventListener("mouseover",()=>{
             if(window.innerWidth>768){
               menuItems.classList.remove("hidden")
               menuButton.classList.add("hidden")
               menuBackgroundForLargerScreen.classList.remove('hidden')
             }
           })
+        //   listItemsArray.forEach(l=>{l.addEventListener("mouseover", (e)=>{
+        //     console.log(listItemsArray)
+        //     e.target.style.color = '#9FCC3B'
+        //     e.target.style.fontWeight = 'bold'
+        //   })
+        // }
+        //   )
+
+        //   listItemsArray.forEach(l=>{l.addEventListener("mouseleave", (e)=>{
+            
+        //     e.target.parentNode.style.color = 'red'
+        //     e.target.parentNode.style.fontWeight = 'normal'
+        //   })
+        // }
+        //   )
           menu.addEventListener("mouseleave",()=>{
             if(window.innerWidth>768){
               menuItems.classList.add("hidden")
@@ -21,6 +36,17 @@ document.addEventListener("DOMContentLoaded", ()=> {
               menuBackgroundForLargerScreen.classList.add('hidden')
             }
           })
+          for (let i = 0; i < listItemsArray.length; i++) {
+            listItemsArray[i].addEventListener('mouseover', function() {
+              this.style.color = '#9FCC3B';
+              this.style.fontWeight = 'bold'
+            });
+          
+            listItemsArray[i].addEventListener('mouseleave', function() {
+              this.style.color = '';
+              this.style.fontWeight = ''
+            });
+          }
           
     //       menuButton.addEventListener('click', ()=>{
     //         menuItems.classList.remove("hidden");
