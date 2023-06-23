@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     //  menuButton.classList.add("hidden");
     //  menuBackground.classList.remove("hidden");
     //       })
+    const menuBackground= document.getElementById('menu-overlay')
            menuButton.addEventListener("touchstart",(e)=>{
              e.preventDefault()
              if(window.innerWidth<=768){
